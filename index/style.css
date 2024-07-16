@@ -210,3 +210,17 @@ font-size: 30px;
     color: white;
 
 }
+.win{
+    width: 100vw;
+    display: flex;
+    
+   
+}
+.win1{
+    width: 33%;
+    background-position: center center;
+}
+.win1 img{
+   height: 250px;
+   width: 80%;
+}
