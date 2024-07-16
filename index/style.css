@@ -117,7 +117,9 @@ color: white;
 .bt button{
    
     border: none;
-    font-size: large;
+    
+    height: 40px;
+    width: 180px;
     cursor: pointer;
     text-decoration: none;
     gap: 20px;
@@ -126,14 +128,14 @@ color: white;
     background-color:#fc456a;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
+font-size: x-large;
 
 }
 .bt2 button{
     background-color:white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: x-large;
     
 
 }
@@ -243,7 +245,8 @@ font-size: 30px;
      
 }
 .win1 button{
-   font-size: large;
+    height: 30px;
+    width: 80px;
    border: none;
    background-color: #fc456a;
    color: aliceblue;
@@ -276,7 +279,8 @@ font-size: 30px;
     padding-left: 100px;
 }
 .win2 button{
-    font-size: large;
+    height: 30px;
+    width: 80px;
     border: none;
     background-color: #fc456a;
     color: aliceblue;
@@ -306,7 +310,8 @@ font-size: 30px;
     padding-left: 100px;
 }
 .win3 button{
-    font-size: large;
+    height: 30px;
+    width: 80px;
     border: none;
     background-color: #fc456a;
     color: aliceblue;
