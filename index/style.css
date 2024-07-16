@@ -219,8 +219,96 @@ font-size: 30px;
 .win1{
     width: 33%;
     background-position: center center;
+    padding-left: 50px;
 }
 .win1 img{
    height: 250px;
    width: 80%;
+   
+}
+.win1 h3{
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+
+}
+.win1 p{
+    font-size: medium;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+}
+.win1 a{
+    padding-left: 100px;
+     
+}
+.win1 button{
+   font-size: large;
+   border: none;
+   background-color: #fc456a;
+   color: aliceblue;
+   cursor: pointer;
+   
+    
+}
+.win2{
+    width: 33%;
+    background-position: center center;
+    padding-left: 50px;
+}
+.win2 img{
+    height: 250px;
+    width: 80%;
+}
+.win2 h3{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+
+}
+.win2 p{
+    font-size: medium;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+}
+.win2 a{
+    padding-left: 100px;
+}
+.win2 button{
+    font-size: large;
+    border: none;
+    background-color: #fc456a;
+    color: aliceblue;
+    cursor: pointer;
+}
+.win3{
+    width: 33%;
+    background-position: center center;
+    padding-left: 50px;
+}
+.win3 img{
+    height: 250px;
+    width: 80%;
+}
+.win3 h3{
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+}
+.win3 p{
+    font-size: medium;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+}
+.win3 a{
+    padding-left: 100px;
+}
+.win3 button{
+    font-size: large;
+    border: none;
+    background-color: #fc456a;
+    color: aliceblue;
+    cursor: pointer;
 }
