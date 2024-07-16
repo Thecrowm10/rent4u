@@ -114,21 +114,22 @@ color: white;
 .bt{
     padding-left: 40px;
 }
+
 .bt button{
-   
-    border: none;
-    
+border: none;
     height: 40px;
     width: 180px;
     cursor: pointer;
     text-decoration: none;
     gap: 20px;
+    border-radius: 6px;
 }
 .bt1 button{
     background-color:#fc456a;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 font-size: x-large;
+
 
 }
 .bt2 button{
@@ -143,7 +144,7 @@ font-size: x-large;
     background-color: white;
     display: flex;
     justify-content:center;
-
+border-radius: 2px 2px 10px 10px;
     height: 400px;
     width: 350px;
     
@@ -155,6 +156,8 @@ font-size: x-large;
     
 }
 .h1 input{
+    border: none;
+    border-radius: 6px;
     background-color: #f2f2f2;
     height: 40px;
     width: 300px;
@@ -167,14 +170,16 @@ font-size: x-large;
     background-color: #f2f2f2;
     height: 40px;
     width: 140px;
-    
+    border: none;
+    border-radius: 6px;
 }
 .h2-2{
     padding-right: 35px;
 
 }
 .opt option{ 
-    
+    border: none;
+    border-radius: 6px;
     height: 35px;
     width: 120px;   
 }
@@ -186,6 +191,8 @@ font-size: x-large;
     height: 40px;
     width: 135px;
     background-color: #f2f2f2;
+    border: none;
+    border-radius: 6px;
 }
 .oo-2{ 
     padding-right: 40px;
@@ -195,22 +202,21 @@ font-size: x-large;
     height: 40px;
     width: 138px;
     background-color: #f2f2f2;
+    border: none;
+    border-radius: 6px;
 
-}
-.but {
-    background-color: #fc456a;
-    height: 40px;
 }
 .but a{
     width: 140px;
 }
 .but button{
-    
+    height: 40px;
     background-color: #fc456a;
     border: none;
     cursor: pointer;
     color: white;
-
+    width: 300px;
+    border-radius: 6px;
 }
 .win{
     width: 100vw;
@@ -246,11 +252,13 @@ font-size: x-large;
 }
 .win1 button{
     height: 30px;
-    width: 80px;
+    width: 100px;
    border: none;
    background-color: #fc456a;
    color: aliceblue;
    cursor: pointer;
+   border-radius: 6px;
+
    
     
 }
@@ -280,11 +288,12 @@ font-size: x-large;
 }
 .win2 button{
     height: 30px;
-    width: 80px;
+    width: 100px;
     border: none;
     background-color: #fc456a;
     color: aliceblue;
     cursor: pointer;
+    border-radius: 5px;
 }
 .win3{
     width: 33%;
@@ -311,9 +320,10 @@ font-size: x-large;
 }
 .win3 button{
     height: 30px;
-    width: 80px;
+    width: 100px;
     border: none;
     background-color: #fc456a;
     color: aliceblue;
     cursor: pointer;
+    border-radius: 5px;
 }
