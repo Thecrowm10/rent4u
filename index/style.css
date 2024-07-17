@@ -8,7 +8,6 @@
     background-color: rgb(44, 41, 41);
     background-attachment: fixed;
 }
-
 .top-nav{
     width:100vw;
     background-color: #fc456a;
@@ -17,7 +16,6 @@
     display: flex;
     /* this is only works when we use display flex property */
     justify-content: space-around;
-
 }
 .top-nav-col1{
     width: 50%;
@@ -55,18 +53,15 @@ color: white;
 .second-nav-col1 a{
     font-size: xx-large;
     width:50% ;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 .second-nav-col1 span{
     color: #fc456a;
-
 }
 .second-nav-col2 button{
     background-color: transparent;
     border: none;
-    cursor: pointer;
-   
+    cursor: pointer; 
 }
 .second-nav-col2{
     display: flex;
@@ -102,7 +97,6 @@ color: white;
     display: flex;
     justify-content:baseline;
     padding-left: 40px;
-
 }
 .subhed2{
     font-size: 60px;
@@ -129,16 +123,12 @@ border: none;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 font-size: x-large;
-
-
 }
 .bt2 button{
     background-color:white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
-    
-
 }
 .tab2{
     background-color: white;
@@ -146,14 +136,12 @@ font-size: x-large;
     justify-content:center;
 border-radius: 2px 2px 10px 10px;
     height: 400px;
-    width: 350px;
-    
+    width: 350px;    
 }
 .hd label{
     display: flex;
     padding-left: 40px;
-    font-size: x-large;
-    
+    font-size: x-large;    
 }
 .h1 input{
     border: none;
@@ -162,9 +150,6 @@ border-radius: 2px 2px 10px 10px;
     height: 40px;
     width: 300px;
     display: flex;
-    
-    
-    
 }
 .h2 input{
     background-color: #f2f2f2;
@@ -177,15 +162,25 @@ border-radius: 2px 2px 10px 10px;
     padding-right: 35px;
 
 }
-.opt option{ 
+.opt-1 select{
     border: none;
     border-radius: 6px;
-    height: 35px;
-    width: 120px;   
+    background-color: #f2f2f2;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    color:grey;
+    text-align:justify;
 }
-.opt-2{
-    padding-right: 35px;
-    
+.opt-2 select{
+    border: none;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    color: grey;
+    text-align: justify;
 }
 .oo-1 input{ 
     height: 40px;
@@ -196,7 +191,6 @@ border-radius: 2px 2px 10px 10px;
 }
 .oo-2{ 
     padding-right: 40px;
-
 }
 .oo-2 input{
     height: 40px;
@@ -204,7 +198,6 @@ border-radius: 2px 2px 10px 10px;
     background-color: #f2f2f2;
     border: none;
     border-radius: 6px;
-
 }
 .but a{
     width: 140px;
@@ -221,11 +214,8 @@ border-radius: 2px 2px 10px 10px;
 .win{
     width: 100vw;
     height: 580px;
-
     display: flex;
     background-color:whitesmoke
-
- 
 }
 .bk1{
     height: 80%;
@@ -249,7 +239,6 @@ border-radius: 2px 2px 10px 10px;
     padding-left: 100px;
     font-size: 20px;
     font-family:'Times New Roman', Times, serif ;
-
 }
 .win1 p{
     font-size: medium;
@@ -268,9 +257,6 @@ border-radius: 2px 2px 10px 10px;
    color: aliceblue;
    cursor: pointer;
    border-radius: 6px;
-
-   
-    
 }
 .bk2{
     height: 80%;
@@ -321,7 +307,6 @@ border-radius: 2px 2px 10px 10px;
     background-color:#fff;
     border-radius: 10px;
     border-block-end-style:inset;
-
 }
 .win3{
     width: 400px;
