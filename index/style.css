@@ -7,9 +7,11 @@
     
     background-color: rgb(44, 41, 41);
     background-attachment: fixed;
+    
 }
 .top-nav{
     width:100vw;
+    height: 4vh;
     background-color: #fc456a;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -62,6 +64,8 @@ color: white;
     background-color: transparent;
     border: none;
     cursor: pointer; 
+    font-size: medium;
+    color: gray;
 }
 .second-nav-col2{
     display: flex;
@@ -72,7 +76,7 @@ color: white;
     width: 50%;
 }
 .pic {
-    height: 580px;
+    height: 100vh;
     background-image:url('../image/rent');
     background-position: center center;
     background-attachment:fixed;
@@ -81,6 +85,8 @@ color: white;
     justify-content:space-around;
     width: 100vw;
    padding-bottom: 300px;
+   position: relative;
+   z-index: 1;
 }
 .tab1{
     padding-top: 150px;
@@ -99,7 +105,7 @@ color: white;
     padding-left: 40px;
 }
 .subhed2{
-    font-size: 60px;
+    font-size: 4em;
     letter-spacing: 3px;
     color: white;
     text-shadow:  0px 3px 25px rgba(0, 0, 0, 0.1);
@@ -135,8 +141,8 @@ font-size: x-large;
     display: flex;
     justify-content:center;
 border-radius: 2px 2px 10px 10px;
-    height: 400px;
-    width: 350px;    
+    height: 65vh;
+    width: 27vw;    
 }
 .hd label{
     display: flex;
@@ -147,14 +153,14 @@ border-radius: 2px 2px 10px 10px;
     border: none;
     border-radius: 6px;
     background-color: #f2f2f2;
-    height: 40px;
-    width: 300px;
+    height: 7vh;
+    width: 22vw;
     display: flex;
 }
 .h2 input{
     background-color: #f2f2f2;
-    height: 40px;
-    width: 140px;
+    height: 7vh;
+    width: 10vw;
     border: none;
     border-radius: 6px;
 }
@@ -166,8 +172,8 @@ border-radius: 2px 2px 10px 10px;
     border: none;
     border-radius: 6px;
     background-color: #f2f2f2;
-    height: 40px;
-    width: 140px;
+    height: 7vh;
+    width: 10vw;
     display: flex;
     color:grey;
     text-align:justify;
@@ -176,15 +182,15 @@ border-radius: 2px 2px 10px 10px;
     border: none;
     border-radius: 6px;
     background-color: #f2f2f2;
-    height: 40px;
-    width: 140px;
+    height: 7vh;
+    width: 10vw;
     display: flex;
     color: grey;
     text-align: justify;
 }
 .oo-1 input{ 
-    height: 40px;
-    width: 135px;
+    height: 7vh;
+    width: 10vw;
     background-color: #f2f2f2;
     border: none;
     border-radius: 6px;
@@ -193,51 +199,52 @@ border-radius: 2px 2px 10px 10px;
     padding-right: 40px;
 }
 .oo-2 input{
-    height: 40px;
-    width: 138px;
+    height: 7vh;
+    width: 10vw;
     background-color: #f2f2f2;
     border: none;
     border-radius: 6px;
 }
-.but a{
-    width: 140px;
-}
 .but button{
-    height: 40px;
+    height: 7vh;
     background-color: #fc456a;
     border: none;
     cursor: pointer;
     color: white;
-    width: 300px;
+    width: 22vw;
     border-radius: 6px;
 }
 .win{
+    top: 650px;
     width: 100vw;
-    height: 580px;
+    height: 45vw;
     display: flex;
-    background-color:whitesmoke
+    background-color:whitesmoke;
+    position: absolute;
 }
 .bk1{
     height: 80%;
     width: 28%;
     background-position: center center;
-   margin: 0px 1px 30px 45px;
+   margin: 0px 1px 30px 55px;
     background-color:#fff;
     border-radius: 10px;
     border-block-end-style:inset;
+    z-index: 2;
+    
 }
 .win1{
-   width: 400px
+   width: 30vw;
 }
 .win1 img{
-   height: 250px;
+   height: 41vh;
    width: 80%;
-   margin: 2px 25px 20px 25px;
+   margin: 20px 25px 20px 25px;
 }
 .win1 h3{
     padding-top: 5px;
     padding-left: 100px;
-    font-size: 20px;
+    font-size: 1.4em;
     font-family:'Times New Roman', Times, serif ;
 }
 .win1 p{
@@ -250,8 +257,8 @@ border-radius: 2px 2px 10px 10px;
      
 }
 .win1 button{
-    height: 30px;
-    width: 100px;
+    height: 5vh;
+    width: 8vw;
    border: none;
    background-color: #fc456a;
    color: aliceblue;
@@ -266,19 +273,21 @@ border-radius: 2px 2px 10px 10px;
     background-color:#fff;
     border-radius: 10px;
     border-block-end-style:inset;
+    z-index: 2;
+   
 }
 .win2{
-    width: 400px;
+    width: 30vw;
 }
 .win2 img{
-    height: 250px;
+    height: 41vh;
    width: 80%;
-   margin: 2px 25px 20px 25px;
+   margin: 20px 25px 20px 25px;
 }
 .win2 h3{
     padding-top: 5px;
-    padding-left: 100px;
-    font-size: 20px;
+    padding-left: 80px;
+    font-size: 1.4em;
     font-family:'Times New Roman', Times, serif ;
 
 }
@@ -291,13 +300,13 @@ border-radius: 2px 2px 10px 10px;
     padding-left: 130px;
 }
 .win2 button{
-    height: 30px;
-    width: 100px;
+    height: 5vh;
+    width: 8vw;
     border: none;
     background-color: #fc456a;
     color: aliceblue;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .bk3{
     height: 80%;
@@ -307,19 +316,21 @@ border-radius: 2px 2px 10px 10px;
     background-color:#fff;
     border-radius: 10px;
     border-block-end-style:inset;
+    z-index: 2;
+    
 }
 .win3{
-    width: 400px;
+    width: 30vw;
 }
 .win3 img{
-    height: 250px;
+    height: 41vh;
     width: 80%;
-    margin: 2px 25px 20px 25px;
+    margin: 20px 25px 20px 25px;
 }
 .win3 h3{
     padding-top: 5px;
     padding-left: 100px;
-    font-size: 20px;
+    font-size: 1.4em;
     font-family:'Times New Roman', Times, serif ;  
 }
 .win3 p{
@@ -331,11 +342,11 @@ border-radius: 2px 2px 10px 10px;
     padding-left: 130px;
 }
 .win3 button{
-    height: 30px;
-    width: 100px;
+    height: 5vh;
+    width: 8vw;
     border: none;
     background-color: #fc456a;
     color: aliceblue;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
 }
