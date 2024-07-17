@@ -220,23 +220,29 @@ border-radius: 2px 2px 10px 10px;
 }
 .win{
     width: 100vw;
+
     display: flex;
-    
-   
+    background-color:whitesmoke
+ 
+}
+.bk1{
+    height: 100%;
+    width: 28%;
+    background-position: center center;
+   margin: 0px 1px 30px 45px;
+    background-color:#fff;
 }
 .win1{
-    width: 33%;
-    background-position: center center;
-    padding-left: 50px;
+   width: 400px
 }
 .win1 img{
    height: 250px;
    width: 80%;
-   
+   margin: 2px 25px 20px 25px;
 }
 .win1 h3{
-    padding-top: 20px;
-    padding-left: 80px;
+    padding-top: 5px;
+    padding-left: 100px;
     font-size: 20px;
     font-family:'Times New Roman', Times, serif ;
 
@@ -244,10 +250,10 @@ border-radius: 2px 2px 10px 10px;
 .win1 p{
     font-size: medium;
     margin-bottom: 1rem;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 .win1 a{
-    padding-left: 100px;
+    padding-left: 110px;
      
 }
 .win1 button{
@@ -262,18 +268,24 @@ border-radius: 2px 2px 10px 10px;
    
     
 }
-.win2{
-    width: 33%;
+.bk2{
+    height: 100%;
+    width: 28%;
     background-position: center center;
-    padding-left: 50px;
+   margin: 0px 1px 30px 45px;
+    background-color:#fff;
+}
+.win2{
+    width: 400px;
 }
 .win2 img{
     height: 250px;
-    width: 80%;
+   width: 80%;
+   margin: 2px 25px 20px 25px;
 }
 .win2 h3{
-    padding-top: 20px;
-    padding-left: 50px;
+    padding-top: 5px;
+    padding-left: 100px;
     font-size: 20px;
     font-family:'Times New Roman', Times, serif ;
 
@@ -281,10 +293,10 @@ border-radius: 2px 2px 10px 10px;
 .win2 p{
     font-size: medium;
     margin-bottom: 1rem;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 .win2 a{
-    padding-left: 100px;
+    padding-left: 130px;
 }
 .win2 button{
     height: 30px;
@@ -295,28 +307,34 @@ border-radius: 2px 2px 10px 10px;
     cursor: pointer;
     border-radius: 5px;
 }
-.win3{
-    width: 33%;
+.bk3{
+    height: 100%;
+    width: 28%;
     background-position: center center;
-    padding-left: 50px;
+   margin: 0px 1px 30px 45px;
+    background-color:#fff;
+}
+.win3{
+    width: 400px;
 }
 .win3 img{
     height: 250px;
     width: 80%;
+    margin: 2px 25px 20px 25px;
 }
 .win3 h3{
-    padding-top: 20px;
-    padding-left: 80px;
+    padding-top: 5px;
+    padding-left: 100px;
     font-size: 20px;
-    font-family:'Times New Roman', Times, serif ;
+    font-family:'Times New Roman', Times, serif ;  
 }
 .win3 p{
     font-size: medium;
     margin-bottom: 1rem;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 .win3 a{
-    padding-left: 100px;
+    padding-left: 130px;
 }
 .win3 button{
     height: 30px;
