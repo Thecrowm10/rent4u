@@ -97,7 +97,7 @@ color: white;
     font-size: 18px;
     font-weight: 300;
     display: inline-block;
-    position: relative;
+    
     color: white;
     font-family: "Poppins", Arial, sans-serif;
     display: flex;
@@ -349,4 +349,23 @@ border-radius: 2px 2px 10px 10px;
     color: aliceblue;
     cursor: pointer;
     border-radius: 6px;
+}
+.row-room{
+    position: relative;
+    top: 480px;
+    height: 150vh;
+    width: 100vw;
+    background-color: #7b7b7cc0;
+}
+.row-room-hd{
+    font-size: 4em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.row-room-pic img{
+    width: 25%;
+    height: 60vh;
+    
+    
 }
