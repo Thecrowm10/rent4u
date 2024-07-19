@@ -378,7 +378,7 @@ border-radius: 2px 2px 10px 10px;
     background-color: white;
 }
 .row-room-txt span{
-    color: #fc456a;
+    color: black;
 }
 .row-room-txt-hd {
    
@@ -390,3 +390,88 @@ border-radius: 2px 2px 10px 10px;
     text-decoration: none;
     color: black;
 }
+.row-room-list ul{
+    padding-top: 30px;
+    padding-left: 100px;
+    list-style-type:none;
+    color: gray;
+}
+.line1-bt{
+    padding-top: 1em;
+}
+.line1-bt a{
+
+   padding-left: 100px;
+   
+}
+.line-bt button{
+    height: 5vh;
+    width: 8vw;
+
+}
+.row-room-pic2 img{
+  height: 100%;
+      width: 25vw;
+   
+}
+.row-room-txt2{
+    height: 60vh;
+    width: 25%;
+    background-color: white;
+}
+.row-room-txt2 span{
+    color: #fc456a;
+}
+.row-room-txt-hd2 {
+   
+    padding-top: 2em;
+    font-size: xx-large;
+    text-align: center;
+}
+.row-room-txt-hd2 a{
+    text-decoration: none;
+    color: black;}
+    .row-room-line2{
+        display: flex;
+        height: 40%;
+        width: 100vw;
+    }
+   
+    .row-room-txt3{
+        height: 60vh;
+        width: 25%;
+        background-color: white;
+    }
+    .row-room-txt-hd3 {
+       
+        padding-top: 2em;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .row-room-txt-hd3 a{
+        text-decoration: none;
+        color: black;
+    }
+    .row-room-pic3 img{
+        height: 100%;
+        width: 25vw;
+  }
+    .row-room-txt4{
+        height: 60vh;
+        width: 25%;
+        background-color: white;
+    }
+    .row-room-txt-hd4 {
+       
+        padding-top: 2em;
+        font-size: xx-large;
+        text-align: center;
+    }
+.row-room-txt-hd4 a{
+        text-decoration: none;
+        color: black;}
+.row-room-pic4 img{
+            height: 100%;
+                width: 25vw;
+             
+          }
