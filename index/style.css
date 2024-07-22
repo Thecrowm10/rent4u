@@ -129,12 +129,22 @@ border: none;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 font-size: x-large;
+border: 1px solid #fc456a;
+}
+.bt1 button:hover{
+    background-color: transparent;
+    color:#fc456a ;
 }
 .bt2 button{
     background-color:white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
+    border: 1px solid white;
+}
+.bt2 button:hover{
+    background-color: transparent;
+    color: white;
 }
 .tab2{
     background-color: white;
@@ -208,11 +218,16 @@ border-radius: 2px 2px 10px 10px;
 .but button{
     height: 7vh;
     background-color: #fc456a;
-    border: none;
+    border: 1px solid #fc456a;
     cursor: pointer;
     color: white;
     width: 22vw;
     border-radius: 6px;
+
+}
+.but button:hover{
+    background-color: transparent;
+    color: #fc456a;
 }
 .win{
     top: 110vh;
@@ -259,11 +274,15 @@ border-radius: 2px 2px 10px 10px;
 .win1 button{
     height: 5vh;
     width: 8vw;
-   border: none;
+   border: 1px solid #fc456a;
    background-color: #fc456a;
    color: aliceblue;
    cursor: pointer;
    border-radius: 6px;
+}
+.win1 button:hover{
+    background-color: transparent;
+    color: #fc456a;
 }
 .bk2{
     height: 80%;
@@ -302,11 +321,15 @@ border-radius: 2px 2px 10px 10px;
 .win2 button{
     height: 5vh;
     width: 8vw;
-    border: none;
+    border: 1px solid #fc456a;
     background-color: #fc456a;
     color: aliceblue;
     cursor: pointer;
     border-radius: 6px;
+}
+.win2 button:hover{
+    background-color: transparent;
+    color: #fc456a;
 }
 .bk3{
     height: 80%;
@@ -344,13 +367,16 @@ border-radius: 2px 2px 10px 10px;
 .win3 button{
     height: 5vh;
     width: 8vw;
-    border: none;
+    border: 1px solid #fc456a;
     background-color: #fc456a;
     color: aliceblue;
     cursor: pointer;
     border-radius: 6px;
 }
-
+.win3 button:hover{
+    background-color: transparent;
+    color: #fc456a;
+}
 .row-room{
     top: 80vh;
     background-color: #dfdfecc0;
@@ -375,9 +401,12 @@ border-radius: 2px 2px 10px 10px;
     height: 60vh;
     width: 50vw;
     border:none;
-    background-color: wheat;
+    background-color: black;
     display: flex; 
     position: relative;
+}
+.row-room-bk:hover{
+    background-color: #fc456a;
 }
 
 .one-pic img{  
