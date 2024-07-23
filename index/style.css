@@ -461,130 +461,17 @@ margin: 8px ;
     border-radius: 4px;
 
 }
-
-
-
-/* .row-room-hd{ 
-    font-size: 4em;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-.row-room-line1{
-    display: flex;
-    height: 40%;
+.offer{
+top:85vh;
+    height: 150vh;
     width: 100vw;
+    background-color: antiquewhite;
+    position: relative;
 }
-.row-room-pic img{
-      height: 100%;
-      width: 25vw;
+.offer-pic{
+    height: 100%;
+    width: 100%;
 }
-.row-room-txt{
-    height: 60vh;
-    width: 25%;
-    background-color: white;
+.offer-pic img{
+    padding-left: 4vh;
 }
-.row-room-txt span{
-    color: black;
-}
-.row-room-txt-hd {
-   
-    padding-top: 2em;
-    font-size: xx-large;
-    text-align: center;
-}
-.row-room-txt-hd a{
-    text-decoration: none;
-    color: black;
-}
-.row-room-list li{
-margin: 8px ;
-}
-.row-room-list ul{
-    padding-top: 30px;
-    padding-left: 100px;
-    list-style-type:none;
-    color: gray;
-}
-.line1-bt{
-    padding-top: 2em;
-}
-.line1-bt a{
-
-   padding-left: 100px;
-   
-}
-.line1-bt button{
-    height: 5vh;
-    width: 10vw;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid gray;
-
-}
-.row-room-pic2 img{
-  height: 100%;
-      width: 25vw;
-   
-}
-.row-room-txt2{
-    height: 60vh;
-    width: 25%;
-    background-color: white;
-}
-.row-room-txt2 span{
-    color: #fc456a;
-}
-.row-room-txt-hd2 {
-   
-    padding-top: 2em;
-    font-size: xx-large;
-    text-align: center;
-}
-.row-room-txt-hd2 a{
-    text-decoration: none;
-    color: black;}
-    .row-room-line2{
-        display: flex;
-        height: 40%;
-        width: 100vw;
-    }
-   
-    .row-room-txt3{
-        height: 60vh;
-        width: 25%;
-        background-color: white;
-    }
-    .row-room-txt-hd3 {
-       
-        padding-top: 2em;
-        font-size: xx-large;
-        text-align: center;
-    }
-    .row-room-txt-hd3 a{
-        text-decoration: none;
-        color: black;
-    }
-    .row-room-pic3 img{
-        height: 100%;
-        width: 25vw;
-  }
-    .row-room-txt4{
-        height: 60vh;
-        width: 25%;
-        background-color: white;
-    }
-    .row-room-txt-hd4 {
-       
-        padding-top: 2em;
-        font-size: xx-large;
-        text-align: center;
-    }
-.row-room-txt-hd4 a{
-        text-decoration: none;
-        color: black;}
-.row-room-pic4 img{
-            height: 100%;
-                width: 25vw;
-             
-           } */
