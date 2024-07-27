@@ -238,7 +238,7 @@ border-radius: 2px 2px 10px 10px;
     background-color:whitesmoke;
     position: absolute;
 }
-.bk1{
+.bk{
     height: 80%;
     width: 28%;
     background-position: center center;
@@ -285,17 +285,6 @@ border-radius: 2px 2px 10px 10px;
     background-color: transparent;
     color: #fc456a;
 }
-.bk2{
-    height: 80%;
-    width: 28%;
-    background-position: center center;
-   margin: 0px 1px 30px 45px;
-    background-color:#fff;
-    border-radius: 10px;
-    border-block-end-style:inset;
-    z-index: 2;
-   
-}
 .win2{
     width: 30vw;
 }
@@ -331,17 +320,6 @@ border-radius: 2px 2px 10px 10px;
 .win2 button:hover{
     background-color: transparent;
     color: #fc456a;
-}
-.bk3{
-    height: 80%;
-    width: 28%;
-    background-position: center center;
-   margin: 0px 1px 30px 45px;
-    background-color:#fff;
-    border-radius: 10px;
-    border-block-end-style:inset;
-    z-index: 2;
-    
 }
 .win3{
     width: 30vw;
@@ -463,8 +441,63 @@ margin: 8px ;
     border-radius: 4px;
 
 }
+.feedback{
+    position: relative;
+    top:80vh;
+    height: 120vh;
+    width: 100%;
+    background-color: #F3F4F7;
+    align-items: end;
+}
+
+.feedback-heading h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    font-weight: 400
+}
+.feedback-content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.fb-item-image{
+    height: 80px;
+    width: 80px;
+    padding-top: 20px;
+    
+}
+.fb-item-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.feedback-content-item{
+    background-color: white;
+    height: 35vh;
+    width: 29%;
+    border-radius: 7px;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.fb-item-content{
+    width: 50%;
+    padding-top: 25px;
+}
+.intro{
+ padding:10px 0px 5px 0px;
+ font-size: 1.5em;
+ font-weight: 200 ;
+    
+}
+
 .offer{
-top:85vh;
+top:80vh;
     height: 150vh;
     width: 100vw;
    background-color: #f3f4f8;
@@ -479,14 +512,16 @@ top:85vh;
     padding-left: 4vh;
 }
 .offer-pic h9{
-    font-size: 2.3em;
+    font-size: 2em;
     padding-left: 20px;
     padding-top: 20px;
+    font-family:"Playfair Display",serif ;
 }
 .offer-pic p{
     font-size: 1.2em;
     padding-left: 30px;
     padding-top: 30px;
+    font-family:"Playfair Display",serif ;
     color: #959597;
 }
 .offer-text{
@@ -497,16 +532,20 @@ position: relative;
     grid-template-columns:auto auto;
     grid-template-rows: auto auto ;
     align-content:center;
+    font-family:"Playfair Display",serif ;
       
 }
 .offer-text-hd{
-    font-size: 5em;
+    font-size: 4em;
     padding:0px 0px 5px 10px;
+    font-family:"Playfair Display",serif ;
 }
+
 .offer-text p{
     grid-column: 1/3;
     font-size:medium;
     padding: 0px 0px 5px 10px;
+    font-family:"Playfair Display",serif ;
     color: #959597;
 }
  .offer-text-offer{
@@ -519,10 +558,55 @@ position: relative;
 
 } 
 .offer-text-offer h8{
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding:10px 0px 10px 50px;
+    font-family:"Playfair Display",serif ;
+    font-weight: 300;
 }
 .offer-text-offer p{
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 10px 0px 0px 50px;
+    font-family:"Playfair Display",serif ;
 }
+@media screen and (max-width:600px) {
+    .top-nav-col1{
+     font-size: 14px;
+    } 
+    .top-nav-col2 i{
+     font-size: 12px;
+ }
+ .second-nav-col2{
+     display: none;
+ }
+ .second-nav-menu{
+     display: block;
+ }
+ .pic{
+     flex-wrap: wrap;
+     background-position: center;height: 100vh;
+     background-size: cover;
+     object-fit: contain;
+    
+ }
+ .tab1{
+     width: 100%;
+ }
+ .tab2{
+     width: 100%;
+ }
+ .tab1 h1{
+     font-size: 40px;
+ }
+ .tab2 table{
+     width: 100%;
+     height: 100vh;
+ }
+ .win{
+    flex-wrap: wrap;
+    margin-top: 400px;
+    
+ }
+ .bk{
+     width: 100%;
+ }
+ }
