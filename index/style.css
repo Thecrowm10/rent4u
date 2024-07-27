@@ -542,6 +542,7 @@ position: relative;
     background-color: transparent;
     position: relative;
     margin: 10px 0px 0px 10px;
+    
 
 } 
 .offer-text-offer h8{
@@ -572,7 +573,7 @@ position: relative;
 .pic-2-hd{
     padding-top: 80px;
     background-color: rgba(252, 69, 106, 0.4);
-    height: 50vh;
+    height: 60vh;
     width: 100vw;  
     
 }
@@ -611,9 +612,50 @@ position: relative;
     background-color: transparent;
     color: white;
 }
+.blog{
+    top:30vh;
+    position: relative;
+    height: 150vh;
+    width: 100vw;
+    background-color: #f3f4f8;   
+    z-index: 2;
+}
+.blog-block{
 
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    
+}
+.blog-area{
+    height:100vh ;
+    width:31.5vw ;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.blg-pic img{
+width:100%;
+height: 60vh;
+border-radius: 6px;
+}
+.blg-text{
+    text-align: center;
+    padding-top: 15px;
+    
+}
+.blg-text-hd1{
+    font-family:"Playfair Display",serif ;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: black;
+    
+}
+.blg-text-hd2{ 
+padding-top: 10px;
 
-
+}
 
 
 
