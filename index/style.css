@@ -656,7 +656,7 @@ border-radius: 6px;
 .blg-text{
     text-align: center;
     padding-top: 15px;
-    
+    font-family:"Playfair Display",serif ;
 }
 .blg-text-hd1{
     font-family:"Playfair Display",serif ;
@@ -673,6 +673,7 @@ padding: 10px;
 }
 .blg-date a{
     text-decoration: none;
+
 }
 .blg-text-hd2{
     color: #fc456a;
