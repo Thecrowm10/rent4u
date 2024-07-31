@@ -753,21 +753,26 @@ padding: 10px;
      color:rgb(228, 221, 221);
 }
 .end1 li{
-    padding-top: 20px;
+    padding-top: 20px;  
+    
+}
+.end1-services-li a{
+    text-decoration: none;
+    color:#f2f2f2;
 }
 .end1-label{
-   padding-top: 20px;
-   
+    padding-top: 20px;
 }
-.end1-label a{
-    padding-left: 5px;
-    
-    
-}
-.end1-label button{
-    cursor: pointer;
-    
-
+.cloud{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 7px;
+    margin-right: 4px;
+    border-radius: 4px;
 }
 .end-but{
     text-decoration: none;
@@ -780,12 +785,47 @@ padding: 10px;
     width: 25vw;
     padding-top: 100px;
     font-family:"Playfair Display",serif ;
+    
 }
 .end4 b{
     font-size: 1.5em;
+    color: white;
    font-family:"Playfair Display",serif ;
 }
+.subscribe-sub {
+margin-top:20px;
+}
+.subscribe-sub input{
+    height: 40px;
+    width:200px;
+    background-color:rgb(46, 44, 44);
+    
+}
+.subscribe-sub button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fc456a;
+    background-color: #fc456a;
+    color: white;
+}
+.follow {
+padding-top:50px ;
+}
 
+.social{
+    padding-top: 20px;
+}
+.social button{
+    height: 40px;
+    width: 40px;
+    background-color: #272727;
+    border: 1px solid grey;
+    cursor: pointer;
+
+}
+.social i{
+    color: white;
+}
 
 
 
