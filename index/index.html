@@ -69,59 +69,37 @@
         <a href="" class="bt1"><button>Learn more</button></a>
         <a href="" class="bt2"><button>Contact us</button></a></div></div>
         
-        <div class="tab2">
-            <table cellspacing="20" cellpadding="10" >
-                <thead> 
-                    <tr class="hd">
-                        <th colspan="2"><label>Book Your Apartment</label></th>
-                    </tr>
-                    
-                </thead>
-                <tbody>
-                    <form
->                    <tr class="h1">
-                        <th colspan="2">
-        
-                <input type="text" id="" placeholder="   Full Name" ></th></tr>
-                    <tr class="h2">
-                        <th class="h2-1">
-                    <input type="text" id="" placeholder="    check -in">
-                    </th>
-                    <th class="h2-2"><input type="text" id="" placeholder="    check-out">
-                    </th></tr>
-                    <tr class="opt">
-                    <th class="opt-1">
-                        <select name="" id="" >
-                            <option value=""disabled selected>    Adults</option>
-                            <option value="">1</option>
-                                <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                    
-                        </select>
-                    </th>
-                    <tH class="opt-2">
-                        <select name="" id="" >
-                            <option value=""disabled selected>    Children</option>
-                            <option value="">1</option>
-                                <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                        <option
-                                        value="">5</option>
-                                        </select>
-                    </tH>
-                    </tr>
-                    <tr class="oo">
-                        <th class="oo-1"><input type="text" id="" placeholder="    Phone number" name="phone-no"  ></th>
-                        <th class="oo-2"><input type="time" id="" placeholder="time" name="time"></th>
-                    </tr>
-                    <tr class="but">
-                        <th colspan="2">
-                            <a href="" ><button>BOOK APPARTMENT NOW</button></a></th>
-                    </tr>    </form>      
-</tbody>
-            </table>
+        <div class="header-form">
+            <form action="">
+                <p>Book your apartment</p>
+                <input type="text" placeholder="  Full Name" style="width: 95%; height: 20%" id="fullname" name="name">
+                <br>
+                <input type="date" name="check-in" id="check-in" placeholder="Check-In" style="width: 45%; height: 20%;"  >
+                <input type="date" name="check-out" id="Check-Out" placeholder="Check-Out" style="width: 45%; height: 20%">
+                <br>
+                <select name="adults" id="adults" style="width: 45%; height: 20%">
+                  
+                    <option value="">Adults</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <select name="children" id="children" style="width: 45%; height: 20%">
+                    <option value="">Children</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <br>
+                <input type="tel" name="Phone-no" id="phone-no" placeholder="Phone No." style="width: 45%; height: 20%">
+                <input type="time" name="" id="" placeholder="Time" style="width: 45%; height: 20%">
+                
+                    <a href=""> <button>Book Apartment Now</button></a>
+            </form>
         </div>
     
        </div> 
@@ -514,6 +492,6 @@
     </div>
    
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -87,7 +87,7 @@ color: white;
     background-attachment:fixed;
     background-size: 100% 100%;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     width: 100vw;
    padding-bottom: 300px;
    position: relative;
@@ -96,8 +96,9 @@ color: white;
 }
 .tab1{
     padding-top: 150px;
-    padding-right: 300px;
+    margin-left: 5vw;
     width: 70%;
+    position: absolute;
     font-family:"Playfair Display",serif ;
 }
 .subhed1{
@@ -108,18 +109,15 @@ color: white;
     font-family:"Playfair Display",serif ;
     display: flex;
     justify-content:baseline;
-    padding-left: 40px;
+
 }
 .subhed2{
     font-size: 3.8em;
     letter-spacing: 3px;
     color: white;
     text-shadow:  0px 3px 25px rgba(0, 0, 0, 0.1);
-    padding-left: 40px;
+    
     font-family:"Playfair Display",serif ;
-}
-.bt{
-    padding-left: 40px;
 }
 
 .bt button{
@@ -153,98 +151,72 @@ border: 1px solid #fc456a;
     background-color: transparent;
     color: white;
 }
-.tab2{
+.header-form{
+    position: absolute;
     background-color: white;
     display: flex;
+    margin-left: 65vw;
     justify-content:center;
-border-radius: 2px 2px 10px 10px;
+    border-radius: 2px 2px 10px 10px;
     height: 65vh;
-    width: 27vw;    
+    width:29vw;    
     font-family:"Playfair Display",serif ;
 }
-.hd label{
-    display: flex;
-    padding-left: 40px;
-    font-size: x-large;    
-    font-family:"Playfair Display",serif ;
+.header-form form{
+    width: 30vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 7px;
+    padding: 25px 30px;
 }
-.h1 input{
-    border: none;
-    border-radius: 6px;
-    background-color: #f2f2f2;
-    height: 7vh;
-    width: 22vw;
-    display: flex;
+.header-form p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px; 
+    padding-left: 18px;
     font-family:"Playfair Display",serif ;
-}
-.h2 input{
-    background-color: #f2f2f2;
-    height: 7vh;
-    width: 10vw;
-    border: none;
-    border-radius: 6px;
-    font-family:"Playfair Display",serif ;
-}
-.h2-2{
-    padding-right: 35px;
+
 
 }
-.opt-1 select{
+.header-form input{
+    background-color: rgb(242, 241, 241);
     border: none;
-    border-radius: 6px;
-    background-color: #f2f2f2;
-    height: 7vh;
-    width: 10vw;
-    display: flex;
-    color:grey;
-    text-align:justify;
+    color:#5c5c5f;
+    margin: 7px;
+    border-radius: 5px;
     font-family:"Playfair Display",serif ;
-}
-.opt-2 select{
-    border: none;
-    border-radius: 6px;
-    background-color: #f2f2f2;
-    height: 7vh;
-    width: 10vw;
-    display: flex;
-    font-family:"Playfair Display",serif ;
-    color: grey;
-    text-align: justify;
-}
-.oo-1 input{ 
-    height: 7vh;
-    font-family:"Playfair Display",serif ;
-    width: 10vw;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 6px;
-}
-.oo-2{ 
-    padding-right: 40px;
-}
-.oo-2 input{
-    height: 7vh;
-    width: 10vw;
-    background-color: #f2f2f2;
-    border: none;
-    font-family:"Playfair Display",serif ;
-    border-radius: 6px;
-}
-.but button{
-    height: 7vh;
-    background-color: #fc456a;
-    border: 1px solid #fc456a;
-    cursor: pointer;
-    color: white;
-    width: 22vw;
-    font-family:"Playfair Display",serif ;
-    border-radius: 6px;
 
 }
-.but button:hover{
+.header-form select{
+    height: 11%;
+    background-color: rgb(242, 241, 241);
+    border: none;
+    color: #5c5c5f;
+    margin: 7px;
+    border-radius: 5px; 
+    font-family:"Playfair Display",serif ;
+
+}
+.header-form button{
+    width: 95%;
+    height: 15%;
+    background-color: #FC456A;
+    border: none;
+    margin: 7px;
+    font-size: larger;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family:"Playfair Display",serif ;
+
+}
+.header-form button:hover{
     background-color: transparent;
-    color: #fc456a;
+    border: 1px solid #FC456A;
+    color: #FC456A;
 }
+
 .win{
     top: 110vh;
     width: 100vw;
