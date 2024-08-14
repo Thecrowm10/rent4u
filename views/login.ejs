@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="log">
+  <div class="log-page">
+
+    <div class="log-pic">
+        <h1>Welcome to Vacation Rental</h1>
+
+    </div>
+    
+    <div class="log-text">
+      <form action="/login" method="post">
+        <h2>LOGIN</h2>
+        <input type="email" required placeholder="    Email" name="email"><i class="bi bi-person-fill"></i><br><br>
+        <input type="password" required placeholder="    Password"
+        name="password"><i class="bi bi-lock-fill"></i><br><br>
+        <a href="/index" class="log-page-but"><button>LOGIN</button></a><br>
+      </form>
+        <p>Don't have account?<a href="/register" class="log-reg"><button>Register</button></a></p>
+    </div>
+    <% if(locals.message)
+    {%>
+<h4 class="message"><%=message%></h4>
+    <%}%>
+  </div>
+</div>
+</body>
+</html>
