@@ -4,12 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.head{
-    
-    background-color: rgb(44, 41, 41);
-    background-attachment: fixed;
-    
-}
 .top-nav{
     font-family:"Playfair Display",serif ;
     width:100vw;
@@ -1029,3 +1023,62 @@ font-family:"Playfair Display",serif ;
     cursor: pointer;
     background-color: transparent;
  }
+ /* about page styling */
+ .about-page-pic{
+    
+    height: 70vh;
+    background-image:url('../image/about.jpg');
+    background-position: center center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+ position: relative;
+
+ }
+ .about-page-pic{
+    text-align: center;
+    padding-top: 25VH;
+ }
+ .about-page-pic p{
+    font-size: medium;
+    font-weight: bold;
+    color:rgb(233, 220, 202);
+    padding-bottom: 20px;
+ }
+ .about-page-pic h1{
+    font-size: 3em;
+    color: white;
+ }
+ .about-win{
+    width: 100vw;
+    height: 120vh;
+    padding-top: 20vh;
+    display: flex;
+    background-color:whitesmoke;
+    
+
+ }
+ .about-feedback{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F3F4F7;
+    
+}
+.about-offer{
+        height: 170vh;
+        width: 100vw;
+       background-color: #f3f4f8;
+        position: relative;
+        display: flex;
+        z-index: 2;
+    }
+    .about-end{
+    
+        position: relative;
+        height: 70vh;
+        width: 100vw;
+        background-color: #272727;
+        display: flex;
+        justify-content: space-around;
+    }

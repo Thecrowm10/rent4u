@@ -86,4 +86,14 @@ router.get("/",(req,res)=>
                 }  
             }
             )
+            router.use("/index",(req,res)=>
+                {
+                    res.render("index")
+                    res.end()
+                })
+            router.use("/about",(req,res)=>
+            {
+                res.render("about")
+                res.end()
+            })
     module.exports = router;
