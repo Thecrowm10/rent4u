@@ -129,6 +129,7 @@ border: none;
     font-family:"Playfair Display",serif ;
 font-size: x-large;
 border: 1px solid #fc456a;
+transition: all 0.6s;
 }
 .bt1 button:hover{
     background-color: transparent;
@@ -140,6 +141,7 @@ border: 1px solid #fc456a;
     font-family:"Playfair Display",serif ;
     font-size: x-large;
     border: 1px solid white;
+    transition: all 0.6s;
 }
 .bt2 button:hover{
     background-color: transparent;
@@ -262,6 +264,7 @@ border: 1px solid #fc456a;
    cursor: pointer;
    border-radius: 6px;
    font-family:"Playfair Display",serif ;
+   transition: all 0.6s;
 }
 .bk button:hover{
     background-color: transparent;
@@ -334,6 +337,7 @@ border: 1px solid #fc456a;
 }
 .row-room-bk{
     display: flex;
+    transition: all 0.6s;
 }
 .row-room-bk:hover{
     background-color: #fc456a;
@@ -596,6 +600,7 @@ position: relative;
     background-color: #fc456a;
     color: white;
     border: 1px solid #fc456a;
+    transition: all 0.6s;
 }
 .pic-2-bt1 button:hover{
     background-color: transparent;
@@ -605,6 +610,7 @@ position: relative;
     background-color:white;
     color: black;
     border: 1px solid white;
+    transition: all 0.6s;
 }
 .pic-2-bt2 button:hover{
     background-color: transparent;
@@ -816,11 +822,16 @@ font-family:"Playfair Display",serif ;
 
     font-family:"Playfair Display",serif ;
 }
+.social button:hover{
+    border: 1px solid#FC456A;
+}
 .social i{
     color: white;
     font-size: medium;
 }
-
+.social i:hover{
+color: #fc456a;
+}
 
 
 
