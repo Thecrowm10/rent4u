@@ -896,7 +896,7 @@ color: #fc456a;
  .log{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(202, 173, 8),grey);
+    background-image: linear-gradient(#FC456A,white);
     position: relative;
     font-family:"Playfair Display",serif ;
  }
@@ -1093,3 +1093,44 @@ color: #fc456a;
         display: flex;
         justify-content: space-around;
     }
+
+
+
+    /* code of service page */
+
+    .service-page{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        position: relative;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-between;
+        background-color:whitesmoke;
+        
+
+    }
+    .service-page-hd{
+        grid-column: 1/5;
+        font-size: 4rem;
+        text-align: center;
+        
+        padding-bottom: 50px;
+        font-family:"Playfair Display",serif ;
+    }
+    .amenities{
+        font-family:"Playfair Display",serif ;
+    background-color:transparent;
+    height: 40vh;
+    width: 24vw;
+    }
+    .services-end{
+        
+        position: relative;
+        height: 70vh;
+        width: 100vw;
+        background-color: #272727;
+        display: flex;
+        justify-content: space-around;
+    }
+

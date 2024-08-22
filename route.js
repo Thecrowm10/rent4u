@@ -96,4 +96,9 @@ router.get("/",(req,res)=>
                 res.render("about")
                 res.end()
             })
+            router.use("/services",(req,res)=>
+                {
+                    res.render("services")
+                    res.end()
+                })
     module.exports = router;
