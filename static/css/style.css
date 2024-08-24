@@ -74,124 +74,119 @@ color: white;
     width: 50%;
     font-family:"Playfair Display",serif ;
 }
+/* General Styles */
+body {
+    font-family: "Playfair Display", serif;
+}
+
 .pic {
     height: 100vh;
-    background-image:url('../image/rent');
+    background-image: url('../image/rent');
     background-position: center center;
-    background-attachment:fixed;
-    background-size: 100% 100%;
-    display:flex;
-    justify-content:space-between;
+    background-attachment: fixed;
+    background-size: cover; /* Changed to cover to maintain aspect ratio */
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
-   padding-bottom: 300px;
-   position: relative;
-   z-index: 1;
-   font-family:"Playfair Display",serif ;
+    padding-bottom: 300px;
+    position: relative;
+    z-index: 1;
 }
-.tab1{
+
+.tab1 {
     padding-top: 150px;
     margin-left: 5vw;
     width: 70%;
     position: absolute;
-    font-family:"Playfair Display",serif ;
 }
-.subhed1{
+
+.subhed1 {
     font-size: 18px;
     font-weight: 300;
-    display: inline-block;
     color: white;
-    font-family:"Playfair Display",serif ;
     display: flex;
-    justify-content:baseline;
-
+    justify-content: baseline;
 }
-.subhed2{
+
+.subhed2 {
     font-size: 3.8em;
     letter-spacing: 3px;
     color: white;
-    text-shadow:  0px 3px 25px rgba(0, 0, 0, 0.1);
-    
-    font-family:"Playfair Display",serif ;
+    text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
 }
 
-.bt button{
-border: none;
+.bt button {
+    border: none;
     height: 40px;
     width: 180px;
     cursor: pointer;
-    text-decoration: none;
-    gap: 20px;
     border-radius: 6px;
 }
-.bt1 button{
-    background-color:#fc456a;
+
+.bt1 button {
+    background-color: #fc456a;
     color: white;
-    font-family:"Playfair Display",serif ;
-font-size: x-large;
-border: 1px solid #fc456a;
-transition: all 0.6s;
+    font-size: x-large;
+    border: 1px solid #fc456a;
+    transition: all 0.6s;
 }
-.bt1 button:hover{
+
+.bt1 button:hover {
     background-color: transparent;
-    color:#fc456a ;
+    color: #fc456a;
 }
-.bt2 button{
-    background-color:white;
+
+.bt2 button {
+    background-color: white;
     color: black;
-    font-family:"Playfair Display",serif ;
     font-size: x-large;
     border: 1px solid white;
     transition: all 0.6s;
 }
-.bt2 button:hover{
+
+.bt2 button:hover {
     background-color: transparent;
     color: white;
 }
-.header-form{
+
+.header-form {
     position: absolute;
     background-color: white;
     display: flex;
     margin-left: 65vw;
-    justify-content:center;
+    justify-content: center;
     border-radius: 2px 2px 10px 10px;
     height: 65vh;
-    width:29vw;    
-    font-family:"Playfair Display",serif ;
+    width: 29vw;
 }
-.header-form form{
+
+.header-form form {
     width: 30vw;
     height: 50vh;
     background-color: white;
     border-radius: 7px;
     padding: 25px 30px;
 }
-.header-form p{
-    font-size: 30px; 
+
+.header-form p {
+    font-size: 30px;
     padding-left: 18px;
-    font-family:"Playfair Display",serif ;
-
-
 }
-.header-form input{
-    background-color: rgb(242, 241, 241);
-    border: none;
-    color:#5c5c5f;
-    margin: 7px;
-    border-radius: 5px;
-    font-family:"Playfair Display",serif ;
 
-}
-.header-form select{
-    height: 11%;
+.header-form input,
+.header-form select {
     background-color: rgb(242, 241, 241);
     border: none;
     color: #5c5c5f;
     margin: 7px;
-    border-radius: 5px; 
-    font-family:"Playfair Display",serif ;
-
+    border-radius: 5px;
 }
-.header-form button{
+
+.header-form select {
+    height: 11%;
+}
+
+.header-form button {
     width: 95%;
     height: 15%;
     background-color: #FC456A;
@@ -200,122 +195,84 @@ transition: all 0.6s;
     font-size: larger;
     cursor: pointer;
     border-radius: 5px;
-    text-decoration: none;
     color: #f2f2f2;
-    font-family:"Playfair Display",serif ;
     transition: all 0.6s;
-
 }
-.header-form button:hover{
+
+.header-form button:hover {
     background-color: transparent;
     border: 1px solid #FC456A;
     color: #FC456A;
 }
 
-.win{
+
+/* General Styles */
+.win {
     top: 110vh;
     width: 100vw;
     height: 45vw;
     display: flex;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     position: absolute;
+    overflow: auto; /* Added to handle content overflow */
 }
-.bk{
+
+.bk {
     height: 80%;
     width: 28%;
     background-position: center center;
-   margin: 0px 1px 30px 55px;
-    background-color:#fff;
+    margin: 0px 1px 30px 55px;
+    background-color: #fff;
     border-radius: 10px;
-    border-block-end-style:inset;
+    border-block-end-style: inset;
     z-index: 2;
-    
 }
-.win1{
-   width: 30vw;
-}
-.win1 img{
-   height: 41vh;
-   width: 80%;
-   margin: 20px 25px 20px 25px;
-}
-.win1 h3{
-    padding-top: 5px;
-    padding-left: 100px;
-    font-size: 1.4em;
-    font-family:"Playfair Display",serif ;
-}
-.win1 p{
-    font-size: medium;
-    margin-bottom: 1rem;
-    font-family:"Playfair Display",serif ;
-    padding-left: 35px;
-}
-.win1 a{
-    padding-left: 110px;
-     
-}
-.bk button{
-    height: 5vh;
-    width: 8vw;
-   border: 1px solid #fc456a;
-   background-color: #fc456a;
-   color: aliceblue;
-   cursor: pointer;
-   border-radius: 6px;
-   font-family:"Playfair Display",serif ;
-   transition: all 0.6s;
-}
-.bk button:hover{
-    background-color: transparent;
-    color: #fc456a;
-}
-.win2{
-    width: 30vw;
-}
-.win2 img{
-    height: 41vh;
-   width: 80%;
-   margin: 20px 25px 20px 25px;
-}
-.win2 h3{
-    padding-top: 5px;
-    padding-left: 80px;
-    font-size: 1.4em;
-    font-family:"Playfair Display",serif ;
 
-}
-.win2 p{
-    font-size: medium;
-    margin-bottom: 1rem;
-    padding-left: 35px;
-    font-family:"Playfair Display",serif ;
-}
-.win2 a{
-    padding-left: 130px;
-}
-.win3{
+.win1, .win2, .win3 {
     width: 30vw;
 }
-.win3 img{
+
+.win1 img, .win2 img, .win3 img {
     height: 41vh;
     width: 80%;
-    margin: 20px 25px 20px 25px;
+    margin: 20px 25px;
 }
-.win3 h3{
+
+.win1 h3, .win2 h3, .win3 h3 {
     padding-top: 5px;
-    padding-left: 100px;
+    text-align: center;
     font-size: 1.4em;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.win3 p{
+
+.win1 p, .win2 p, .win3 p {
     font-size: medium;
     margin-bottom: 1rem;
     padding-left: 35px;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.win3 a{
-    padding-left: 130px;
+
+.win1 a, .win2 a, .win3 a {
+    display: block;
+    text-align: center; /* Center links for better appearance on smaller screens */
+    margin: 10px auto; /* Center the link with margin auto */
+}
+
+.bk button {
+    height: 5vh;
+    width: 8vw;
+    border: 1px solid #fc456a;
+    background-color: #fc456a;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: "Playfair Display", serif;
+    transition: all 0.6s;
+}
+
+.bk button:hover {
+    background-color: transparent;
+    color: #fc456a;
 }
 .row-room{
     position: relative;
@@ -408,346 +365,406 @@ margin: 8px ;
     border-radius: 4px;
     font-family:"Playfair Display",serif ;
 }
-.feedback{
+.feedback {
     position: relative;
-    top:80vh;
-    height: 120vh;
+    top: 80vh;
+    height: auto; /* Changed to auto to accommodate content on smaller screens */
     width: 100vw;
     background-color: #F3F4F7;
-    align-items: end;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: center; /* Centers content horizontally */
 }
 
-.feedback-heading h2{
+.feedback-heading h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3em; /* Adjusted font size for better readability */
     font-family: "Playfair Display", serif;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    font-weight: 400
+    padding-top: 50px; /* Adjusted padding */
+    padding-bottom: 30px; /* Adjusted padding */
+    font-weight: 400;
 }
-.feedback-content{
+
+.feedback-content {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+    gap: 20px;
+    align-items: center; /* Centers items horizontally */
 }
-.fb-item-image{
-    height: 80px;
-    width: 80px;
-    padding-top: 20px;
-    
+
+.fb-item-image {
+    height: 60px; /* Adjusted size */
+    width: 60px; /* Adjusted size */
+    padding-top: 10px; /* Adjusted padding */
 }
-.fb-item-image img{
+
+.fb-item-image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    
 }
-.feedback-content-item{
+
+.feedback-content-item {
     background-color: white;
-    height: 35vh;
-    width: 29%;
+    height: auto; /* Adjusted height */
+    width: 80%; /* Full width on smaller screens */
+    max-width: 600px; /* Maximum width for better readability */
     border-radius: 7px;
     border: transparent;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.fb-item-content{
-    width: 50%;
-    padding-top: 25px;
-}
-.intro{
- padding:10px 0px 5px 0px;
- font-size: 1.5em;
- font-weight: 200 ;
- font-family:"Playfair Display",serif ;
-    
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+    padding: 20px; /* Added padding for better spacing */
 }
 
-.offer{
-top:80vh;
+.fb-item-content {
+    width: 100%; /* Full width on smaller screens */
+    padding-top: 10px; /* Adjusted padding */
+    text-align: center; /* Centers text */
+}
+
+.intro {
+    padding: 5px 0px 5px 0px;
+    font-size: 1.2em; /* Adjusted font size */
+    font-weight: 200;
+    font-family: "Playfair Display", serif;
+}
+.offer {
+    top: 80vh;
     height: 150vh;
     width: 100vw;
-   background-color: #f3f4f8;
+    background-color: #f3f4f8;
     position: relative;
     display: flex;
     z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.offer-pic{
+
+.offer-pic {
     height: 100%;
     width: 45%;
 }
-.offer-pic img{
+
+.offer-pic img {
     padding-left: 4vh;
+    width: 100%;
+    height: auto;
 }
-.offer-pic h9{
+
+.offer-pic h9 {
     font-size: 2em;
     padding-left: 20px;
     padding-top: 20px;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.offer-pic p{
+
+.offer-pic p {
     font-size: 1.2em;
     padding-left: 30px;
     padding-top: 30px;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
     color: #959597;
-}
-.offer-text{
-height: 100%;
-width: 55%;
-position: relative;
-    display: grid;
-    grid-template-columns:auto auto;
-    grid-template-rows: auto auto ;
-    align-content:center;
-    font-family:"Playfair Display",serif ;
-      
-}
-.offer-text-hd{
-    font-size: 4em;
-    padding:0px 0px 5px 10px;
-    font-family:"Playfair Display",serif ;
 }
 
-.offer-text p{
-    grid-column: 1/3;
-    font-size:medium;
+.offer-text {
+    height: 100%;
+    width: 55%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-content: center;
+    font-family: "Playfair Display", serif;
+}
+
+.offer-text-hd {
+    font-size: 4em;
     padding: 0px 0px 5px 10px;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
+}
+
+.offer-text p {
+    grid-column: 1/3;
+    font-size: medium;
+    padding: 0px 0px 5px 10px;
+    font-family: "Playfair Display", serif;
     color: #959597;
 }
- .offer-text-offer{
-    height:27vh;
+
+.offer-text-offer {
+    height: 27vh;
     width: 27vw;
-    border:transparent;
+    border: transparent;
     background-color: transparent;
     position: relative;
     display: flex;
     padding-left: 10px;
-} 
-.offer-icon{
+}
+
+.offer-icon {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    
     background-color: #fc456a;
     display: flex;
-    -webkit-box-align: center ;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
 }
-.offer-icon1{
+
+.offer-icon1 {
     font-size: 28px;
     color: #fff;
-    
-    
 }
-.offer-text-1{
+
+.offer-text-1 {
     width: 100%;
     height: 100%;
 }
-.offer-text-offer h8{
+
+.offer-text-offer h8 {
     font-size: 1.1em;
-    padding:10px 0px 10px 20px;
-    font-family:"Playfair Display",serif ;
+    padding: 10px 0px 10px 20px;
+    font-family: "Playfair Display", serif;
     font-weight: 300;
 }
-.offer-text-offer p{
+
+.offer-text-offer p {
     font-size: 0.9em;
     padding: 10px 0px 0px 20px;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.pic-2{
+
+.pic-2 {
     top: 48vh;
     height: 100vh;
-    background-image:url('../image/rent');
+    background-image: url('../image/rent');
     background-position: center center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: 100% 100%;
     width: 100vw;
-   position: relative;
-   z-index: 1;
-   padding-top: 15%;
-   text-align: center;
-   gap: 20px;
+    position: relative;
+    z-index: 1;
+    padding-top: 15%;
+    text-align: center;
+    gap: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
 }
-.pic-2-hd{
+
+.pic-2-hd {
     padding-top: 80px;
     background-color: rgba(252, 69, 106, 0.4);
     height: 60vh;
-    width: 100vw;  
-    
+    width: 100vw;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
 }
-.pic-2-hd b{
+
+.pic-2-hd b {
     font-size: 4em;
     color: white;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
+}
 
+.pic-2-hd p {
+    padding: 20px 0;
+    font-family: "Playfair Display", serif;
+    color: white;
 }
-.pic-2-hd p{
-    padding: 20px 0px 20px 0px;
-    font-family:"Playfair Display",serif ;
-    color:white;
-}
-.pic-2-bt button{
+
+.pic-2-bt button {
     height: 40px;
     width: 120px;
     border-radius: 8px;
     cursor: pointer;
+    font-family: "Playfair Display", serif; /* Ensure consistency in font */
 }
-.pic-2-bt1 button{
+
+.pic-2-bt1 button {
     background-color: #fc456a;
     color: white;
     border: 1px solid #fc456a;
     transition: all 0.6s;
 }
-.pic-2-bt1 button:hover{
+
+.pic-2-bt1 button:hover {
     background-color: transparent;
     color: #fc456a;
 }
-.pic-2-bt2 button{
-    background-color:white;
+
+.pic-2-bt2 button {
+    background-color: white;
     color: black;
     border: 1px solid white;
     transition: all 0.6s;
 }
-.pic-2-bt2 button:hover{
+
+.pic-2-bt2 button:hover {
     background-color: transparent;
     color: white;
 }
-.blog{
-    top:30vh;
+.blog {
+    top: 30vh;
     position: relative;
     height: 170vh;
     width: 100vw;
-    background-color: #f3f4f8;   
+    background-color: #f3f4f8;
     z-index: 2;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
-.blog-hd1{
-    font-family:"Playfair Display",serif ;
+
+.blog-hd1 {
+    font-family: "Playfair Display", serif;
     font-size: 3em;
     text-align: center;
     padding-top: 120px;
     text-shadow: 0.5px 0.5px 10px black;
 }
-.blog-hd-2{
-    font-family:"Playfair Display",serif ;
+
+.blog-hd-2 {
+    font-family: "Playfair Display", serif;
     text-align: center;
-    padding: 20px 0px 40px 0px;
+    padding: 20px 0 40px;
     color: #fc456a;
 }
-.blog-block{
 
-    height: 150vh;
+.blog-block {
+    height: auto; /* Allow height to adjust based on content */
     width: 100vw;
-  display: flex;
-  justify-content: space-around;
-    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap items to new lines on smaller screens */
+    gap: 20px; /* Add space between items */
+    box-sizing: border-box; /* Ensure padding and margin are included in width */
 }
-.blog-area{
-    height:100vh ;
-    width:30vw;
+
+.blog-area {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    max-width: 30vw; /* Set maximum width */
     background-color: white;
     border: 1px solid white;
     border-radius: 7px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
-.blg-pic img{
-width:100%;
-height: 60vh;
-border-radius: 6px;
+
+.blg-pic img {
+    width: 100%;
+    height: auto; /* Adjust height based on image aspect ratio */
+    border-radius: 6px;
 }
-.blg-text{
+
+.blg-text {
     text-align: center;
-    padding-top: 15px;
-    font-family:"Playfair Display",serif ;
+    padding: 15px;
+    font-family: "Playfair Display", serif;
 }
-.blg-text-hd1{
-    font-family:"Playfair Display",serif ;
+
+.blg-text-hd1 {
+    font-family: "Playfair Display", serif;
     font-size: 1.7em;
     text-decoration: none;
     color: black;
     transition: all 0.5s;
 }
-.blg-text-hd1:hover{
-    color: #fc456a;
-}
-.blg-date{ 
-padding: 10px;
-}
-.blg-date a{
-    text-decoration: none;
 
+.blg-text-hd1:hover {
+    color: #fc456a;
 }
-.blg-text-hd2{
+
+.blg-date {
+    padding: 10px;
+}
+
+.blg-date a {
+    text-decoration: none;
+}
+
+.blg-text-hd2 {
     color: #fc456a;
     transition: all 0.5s;
 }
-.blg-text-hd2:hover{
+
+.blg-text-hd2:hover {
     color: black;
 }
-.blg-admin{
-    padding: 0px 3px 0px 3px;
+
+.blg-admin {
+    padding: 0 3px;
     color: #fc456a;
     transition: all 0.5s;
 }
-.blg-admin:hover{
+
+.blg-admin:hover {
     color: black;
 }
-.msg{
+
+.msg {
     color: #fc456a;
     transition: 0.5s;
 }
-.msg:hover{
+
+.msg:hover {
     color: black;
 }
-.blg-text-hd3{
+
+.blg-text-hd3 {
     padding-top: 10px;
     color: #959597;
 }
 
-.end{
-    top:30vh;
+.end {
+    top: 30vh;
     position: relative;
-    height: 70vh;
+    height: auto; /* Adjust height to fit content */
     width: 100vw;
     background-color: #272727;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
-.end1{
-    width: 25vw;
+
+.end1, .end4 {
+    width: 100%;
+    max-width: 25vw; /* Set maximum width for larger screens */
     padding-top: 100px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
-.end1 b{
-    padding-left: 20px;
+
+.end1 b, .end4 b {
     font-size: 1.5em;
     color: white;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.end1 p{
-    padding: 30px 10px 30px 10px;
+
+.end1 p, .end4 p {
+    padding: 30px 10px;
     color: #5c5c5f;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.end1 ul{
+
+.end1 ul {
     list-style: none;
-    padding: 20px 10px 30px 10px;
-     font-family:"Playfair Display",serif ;
-     color:rgb(228, 221, 221);
+    padding: 20px 10px;
+    font-family: "Playfair Display", serif;
+    color: rgb(228, 221, 221);
 }
-.end1 li{
-    padding-top: 20px;  
-    
-}
-.end1-services-li a{
-    text-decoration: none;
-    color:#f2f2f2;
-}
-.end1-label{
+
+.end1 li {
     padding-top: 20px;
 }
-.cloud{
+
+.end1-services-li a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.end1-label {
+    padding-top: 20px;
+}
+
+.cloud {
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
     text-decoration: none;
@@ -760,58 +777,54 @@ padding: 10px;
     transition: all 0.5s;
     font-size: small;
 }
-.cloud:hover{
+
+.cloud:hover {
     border: 1px solid black;
 }
-.end-but{
+
+.end-but {
     text-decoration: none;
     color: #fc456a;
     padding-left: 20px;
     font-size: large;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.end4{
-    width: 25vw;
-    padding-top: 100px;
-    font-family:"Playfair Display",serif ;
-    
-}
-.end4 b{
-    font-size: 1.5em;
-    color: white;
-   font-family:"Playfair Display",serif ;
-}
-.subscribe-sub {
-margin-top:20px;
 
+.subscribe-sub {
+    margin-top: 20px;
 }
-.subscribe-sub input{
+
+.subscribe-sub input {
     height: 40px;
-    width:200px;
-    background-color:rgb(46, 44, 44);
+    width: 100%; /* Make input full-width */
+    max-width: 200px; /* Limit maximum width */
+    background-color: rgb(46, 44, 44);
     border: none;
     padding-left: 10px;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
 }
-.subscribe-sub button{
-    width: 40px;
+
+.subscribe-sub button {
+    width: 100%;
+    max-width: 40px; /* Limit maximum width */
     height: 40px;
     border: 1px solid #fc456a;
     background-color: #fc456a;
     color: white;
-    font-family:"Playfair Display",serif ;
+    font-family: "Playfair Display", serif;
     cursor: pointer;
 }
+
 .follow {
-padding-top:50px ;
-font-family:"Playfair Display",serif ;
+    padding-top: 50px;
+    font-family: "Playfair Display", serif;
 }
 
-.social{
+.social {
     padding-top: 20px;
-
 }
-.social button{
+
+.social button {
     height: 40px;
     margin-left: 10px;
     border-radius: 5px;
@@ -819,18 +832,489 @@ font-family:"Playfair Display",serif ;
     background-color: #272727;
     border: 1px solid rgb(107, 102, 102);
     cursor: pointer;
+    font-family: "Playfair Display", serif;
+}
 
-    font-family:"Playfair Display",serif ;
+.social button:hover {
+    border: 1px solid #FC456A;
 }
-.social button:hover{
-    border: 1px solid#FC456A;
-}
-.social i{
+
+.social i {
     color: white;
     font-size: medium;
 }
-.social i:hover{
-color: #fc456a;
+
+.social i:hover {
+    color: #fc456a;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .top-nav-col1, .top-nav-col2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second-nav-col2 {
+        font-size: x-large;
+        gap: 20px;
+    }
+
+    .pic {
+        padding-bottom: 200px;
+    }
+
+    .tab1 {
+        margin-left: 2vw;
+        width: 90%;
+    }
+
+    .header-form {
+        margin-left: 50vw;
+        width: 50vw;
+        height: 64vh;
+
+    }
+
+    .header-form form {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .bt button {
+        width: 150px;
+        height: 35px;
+    }
+
+    .subhed2 {
+        font-size: 3em;
+    }
+
+    .win {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .bk {
+        width: 35%;
+        margin: 0px 1px 30px 20px;
+    }
+
+    .win1, .win2, .win3 {
+        width: 35vw;
+    }
+
+    .win1 h3, .win2 h3, .win3 h3 {
+        padding-left: 10px;
+        font-size: 1.2em;
+    }
+
+    .win1 p, .win2 p, .win3 p {
+        padding-left: 10px;
+    }
+    .bk button {
+        height: 6vh; /* Slightly larger for easier tapping */
+        width: 10vw; /* Adjust width for better fit */
+        font-size: 0.8em; /* Adjust font size for readability */
+    }
+
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav, .second-nav {
+        flex-direction: column;
+    }
+
+    .second-nav-col1 {
+        width: 100%;
+        text-align: center;
+    }
+    .feedback-content-item {
+        width: 90%;
+    }
+
+    .win {
+        flex-direction: column;
+        height: auto; /* Adjust height for mobile screens */
+    }
+
+    .bk {
+        width: 80%;
+        margin: 0 0 30px 0;
+    }
+
+    .win1, .win2, .win3 {
+        width: 80vw;
+    }
+
+    .win1 h3, .win2 h3, .win3 h3 {
+        padding-left: 0;
+        font-size: 1.1em;
+    }
+
+    .win1 p, .win2 p, .win3 p {
+        padding-left: 0;
+    }
+
+    .win1 a, .win2 a, .win3 a {
+        padding-left: 0; /* Remove left padding on mobile */
+        text-align: center;
+    }
+    .bk button {
+        height: 7vh; /* Increase height for better touch target */
+        width: 12vw; /* Adjust width for mobile screens */
+        font-size: 0.9em; /* Increase font size for readability */
+    }
+
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pic {
+        padding-bottom: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab1 {
+        margin-left: 0;
+        width: 90%;
+        padding-top: 100px;
+    }
+
+    .header-form {
+        margin-left: 0;
+        width: 80vw;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+
+    .header-form form {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .bt button {
+        width: 120px;
+        height: 30px;
+    }
+
+    .subhed2 {
+        font-size: 2.5em;
+    }
+    .offer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .offer-pic {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Added margin for spacing */
+    }
+
+    .offer-pic img {
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .offer-pic h9 {
+        font-size: 1.5em; /* Adjusted font size */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .offer-pic p {
+        font-size: 1em; /* Adjusted font size */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .offer-text {
+        width: 100%; /* Full width for smaller screens */
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Adjust row layout */
+    }
+
+    .offer-text-hd {
+        font-size: 2.5em; /* Adjusted font size */
+        padding: 0px 0px 5px 0px;
+    }
+
+    .offer-text p {
+        font-size: 1em; /* Adjusted font size */
+        padding: 0px 0px 5px 0px;
+    }
+
+    .offer-text-offer {
+        height: auto; /* Adjusted height */
+        width: 100%; /* Full width */
+        max-width: 600px; /* Maximum width for readability */
+        padding-left: 0; /* Remove left padding */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .offer-icon {
+        height: 50px; /* Adjusted size */
+        width: 50px; /* Adjusted size */
+        margin-bottom: 10px; /* Added margin for spacing */
+    }
+
+    .offer-icon1 {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .offer-text-offer h8 {
+        font-size: 1em; /* Adjusted font size */
+        padding: 10px 0;
+    }
+
+    .offer-text-offer p {
+        font-size: 0.8em; /* Adjusted font size */
+        padding: 10px 0;
+    }
+    .pic-2-hd {
+        height: 50vh; /* Reduce height for smaller screens */
+    }
+
+    .pic-2-hd b {
+        font-size: 2.5em; /* Adjust font size for headings */
+    }
+
+    .pic-2-hd p {
+        font-size: 1em; /* Adjust font size for paragraphs */
+    }
+
+    .pic-2-bt button {
+        height: 35px; /* Adjust button height */
+        width: 100px; /* Adjust button width */
+        font-size: 0.9em; /* Adjust font size on buttons */
+    }
+    .blog-hd1 {
+        font-size: 2.5em; /* Adjust font size for headings */
+        padding-top: 80px; /* Adjust padding for smaller screens */
+    }
+
+    .blog-hd-2 {
+        padding: 15px 0 30px; /* Adjust padding for smaller screens */
+    }
+
+    .blog-area {
+        max-width: 100%; /* Make blog areas full width on smaller screens */
+    }
+
+    .blg-text-hd1 {
+        font-size: 1.5em; /* Adjust font size for headings */
+    }
+    .end {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .end1, .end4 {
+        max-width: 90%; /* Increase maximum width for better fit */
+        padding-top: 50px; /* Adjust padding for smaller screens */
+    }
+
+    .end1 b, .end4 b {
+        font-size: 1.2em; /* Reduce font size for headings */
+    }
+
+    .end1 p, .end4 p {
+        padding: 20px 5px; /* Adjust padding for smaller screens */
+    }
+
+    .subscribe-sub input, .subscribe-sub button {
+        max-width: 100%; /* Ensure full width */
+    }
+
+    .social button {
+        width: 35px; /* Adjust button size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top-nav, .second-nav {
+        font-size: small;
+    }
+
+    .second-nav-col2 {
+        font-size: large;
+        gap: 10px;
+    }
+
+    .pic {
+        padding-bottom: 100px;
+        background-size: cover; /* Ensures the background image covers the area */
+    }
+    .win {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .bk {
+        width: 90%;
+        margin: 0 auto 30px auto; /* Center and adjust margins for smaller screens */
+    }
+
+    .win1, .win2, .win3 {
+        width: 90vw;
+    }
+
+    .win1 img, .win2 img, .win3 img {
+        height: auto; /* Maintain aspect ratio on smaller screens */
+    }
+
+    .win1 h3, .win2 h3, .win3 h3 {
+        font-size: 1em;
+    }
+
+    .win1 p, .win2 p, .win3 p {
+        font-size: small;
+    }
+
+    .win1 a, .win2 a, .win3 a {
+        padding-left: 0;
+        font-size: small; /* Adjust font size for links */
+    }
+    .bk button {
+        height: 8vh; /* Larger height for easier interaction */
+        width: 15vw; /* Adjust width to fit mobile screens */
+        font-size: 1em; /* Increase font size for better readability */
+    }
+
+    .tab1 {
+        margin-left: 0;
+        width: 95%;
+        padding-top: 80px;
+    }
+
+    .header-form {
+        margin-left: 0;
+        width: 90vw;
+        height: auto;
+        top: auto;
+        left: auto;
+        padding: 20px;
+    }
+
+    .header-form form {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .bt button {
+        width: 100px;
+        height: 25px;
+    }
+
+    .subhed2 {
+        font-size: 2em;
+    }
+
+    .header-form p {
+        font-size: 24px;
+    }
+
+    .feedback-heading h2 {
+        font-size: 30px;
+    }
+
+    .feedback-content-item {
+        height: auto;
+        width: 90%;
+    }
+    .offer-pic h9 {
+        font-size: 1em; /* Further reduced font size */
+    }
+
+    .offer-pic p {
+        font-size: 0.8em; /* Further reduced font size */
+    }
+
+    .offer-text-hd {
+        font-size: 1.5em; /* Further reduced font size */
+    }
+
+    .offer-text p {
+        font-size: 0.8em; /* Further reduced font size */
+    }
+
+    .offer-text-offer h8 {
+        font-size: 0.9em; /* Further reduced font size */
+    }
+
+    .offer-text-offer p {
+        font-size: 0.7em; /* Further reduced font size */
+    }
+
+    .offer-icon {
+        height: 40px; /* Further reduced size */
+        width: 40px; /* Further reduced size */
+    }
+
+    .offer-icon1 {
+        font-size: 1.2em; /* Further reduced font size */
+    }
+    .pic-2-hd {
+        height: 40vh; /* Further reduce height for very small screens */
+        padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+
+    .pic-2-hd b {
+        font-size: 1.8em; /* Further reduce font size */
+    }
+
+    .pic-2-hd p {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+
+    .pic-2-bt button {
+        height: 30px; /* Further adjust button height */
+        width: 80px; /* Further adjust button width */
+        font-size: 0.8em; /* Further adjust font size on buttons */
+    }
+    .blog-hd1 {
+        font-size: 1.8em; /* Further reduce font size */
+        padding-top: 60px; /* Further reduce padding */
+    }
+
+    .blog-hd-2 {
+        padding: 10px 0 20px; /* Further reduce padding */
+    }
+
+    .blog-block {
+        flex-direction: column; /* Stack blog areas vertically on very small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .blog-area {
+        max-width: 100%; /* Ensure full width */
+    }
+
+    .blg-text-hd1 {
+        font-size: 1.2em; /* Further reduce font size */
+    }
+    .end1, .end4 {
+        max-width: 100%; /* Ensure full width */
+        padding-top: 30px; /* Further reduce padding */
+    }
+
+    .end1 b, .end4 b {
+        font-size: 1em; /* Further reduce font size for headings */
+    }
+
+    .end1 p, .end4 p {
+        padding: 15px 5px; /* Further adjust padding */
+    }
+
+    .subscribe-sub input, .subscribe-sub button {
+        width: 100%; /* Ensure full width */
+        max-width: 100%; /* Ensure full width */
+    }
+
+    .social button {
+        width: 30px; /* Further adjust button size */
+    }
 }
 
 
@@ -839,54 +1323,6 @@ color: #fc456a;
 
 
 
-
-
-
-
-
-
-@media screen and (max-width:600px) {
-    .top-nav-col1{
-     font-size: 14px;
-    } 
-    .top-nav-col2 i{
-     font-size: 12px;
- }
- .second-nav-col2{
-     display: none;
- }
- .second-nav-menu{
-     display: block;
- }
- .pic{
-     flex-wrap: wrap;
-     background-position: center;height: 100vh;
-     background-size: cover;
-     object-fit: contain;
-    
- }
- .tab1{
-     width: 100%;
- }
- .tab2{
-     width: 100%;
- }
- .tab1 h1{
-     font-size: 40px;
- }
- .tab2 table{
-     width: 100%;
-     height: 100vh;
- }
- .win{
-    flex-wrap: wrap;
-    margin-top: 400px;
-    
- }
- .bk{
-     width: 100%;
- }
- }
 
  /* code for login page */
 .log-text i{
