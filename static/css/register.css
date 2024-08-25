@@ -16,7 +16,7 @@ body {
     overflow: hidden;
 }
 
-.login-wrapper {
+.register-wrapper {
     display: flex;
     height: 80vh;
     width: 90vw;
@@ -27,16 +27,17 @@ body {
     position: relative;
 }
 
-.login-image {
+.register-image {
     width: 50%;
-    background: url('../image/about.jpg') center/cover no-repeat;
+    background: url('../image/about.jpg') center/cover no-repeat; 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     position: relative;
     box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
     animation: slideInLeft 1s ease-in-out;
 }
-.login-form-container {
+
+.register-form-container {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -51,20 +52,20 @@ body {
     animation: fadeInUp 1s ease-in-out;
 }
 
-.login-form-container h1 {
+.register-form-container h1 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
 }
 
-.login-form-container p {
+.register-form-container p {
     color: #666;
     margin-bottom: 30px;
     animation: fadeIn 1s ease-in-out 0.5s;
 }
 
-.login-form {
+.register-form {
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -72,7 +73,7 @@ body {
     gap: 15px;
 }
 
-.login-form input {
+.register-form input {
     height: 45px;
     padding: 0 15px;
     border-radius: 8px;
@@ -82,15 +83,15 @@ body {
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
-.login-form input:focus {
+.register-form input:focus {
     border-color: #FC456A;
     transform: translateY(-5px);
 }
-.log-but button{
+
+.reg-page-but button {
     margin-top: 25px;
-    margin-left: 14px;
     height: 6vh;
-    width: 28vw;
+    width: 100%;
     border-radius: 8px;
     border: transparent;
     background-color: #FC456A;
@@ -99,11 +100,13 @@ body {
     transition: all 0.7s ease;
     font-size: medium;
 }
-.log-but button:hover{
+
+.reg-page-but button:hover {
     background-color: transparent;
     color: #FC456A;
     border: 1px solid #FC456A;
 }
+
 .register {
     margin-top: 15px;
     color: #333;
@@ -130,6 +133,7 @@ body {
         transform: translateY(0);
     }
 }
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -143,56 +147,56 @@ body {
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
-    .login-wrapper {
+    .register-wrapper {
         height: 70vh;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .login-wrapper {
+    .register-wrapper {
         flex-direction: column;
         height: auto;
     }
 
-    .login-image {
+    .register-image {
         width: 100%;
         height: 40vh;
     }
 
-    .login-form-container {
+    .register-form-container {
         width: 100%;
         border-radius: 0;
         padding: 30px;
     }
 
-    .login-form-container h1 {
+    .register-form-container h1 {
         font-size: 2em;
     }
 
-    .login-form-container p {
+    .register-form-container p {
         font-size: 0.9em;
     }
 
-    .login-form input, .login-form button {
+    .register-form input, .register-form button {
         height: 40px;
         font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .login-form-container h1 {
+    .register-form-container h1 {
         font-size: 1.5em;
     }
 
-    .login-form-container p {
+    .register-form-container p {
         font-size: 0.8em;
     }
 
-    .login-form {
+    .register-form {
         width: 90%;
     }
 
-    .login-form input, .login-form button {
+    .register-form input, .register-form button {
         height: 35px;
         font-size: 0.8em;
     }

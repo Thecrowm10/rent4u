@@ -78,7 +78,7 @@ router.get("/",(req,res)=>
                             res.end()
                 }
                 else{
-                    res.render('login',{message:email+" Added Successfully"})
+                    res.render('login',{message:name+" Added Successfully"})
                 }
             })
                             }
