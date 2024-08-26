@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-nav{
+    font-family:"Playfair Display",serif ;
+    width:100vw;
+    height: 4vh;
+    background-color: #fc456a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    /* this is only works when we use display flex property */
+    justify-content: space-around;
+}
+.top-nav-col1{
+    width: 50%;
+    color: rgb(148, 138, 138);
+    display: flex;
+    justify-content: center;
+}
+.top-nav-col1 a{
+    text-decoration: none;
+    color: white;
+}
+.top-nav-col2 i{
+color: white;
+}
+.top-nav-col2{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    gap: 20px;    
+}
+.second-nav{
+    width:100vw;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display:flex;
+    font-family:"Playfair Display",serif ;
+    justify-content: space-around;
+}
+.second-nav-col1{
+    width: 30%;
+}
+.second-nav-col1 b{
+    color: black;
+}
+.second-nav-col1 a{
+    font-size: xx-large;
+    width:50% ;
+    text-decoration: none;  
+    font-family:"Playfair Display",serif ;
+}
+.second-nav-col1 span{
+    color: #fc456a;
+}
+.second-nav-col2 button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+    font-size: medium;
+    color: gray;
+}
+.second-nav-col2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size:xx-large;
+    font-weight: 400;
+    width: 50%;
+    font-family:"Playfair Display",serif ;
+}
+/* General Styles */
+body {
+    font-family: "Playfair Display", serif;
+}
+.about-page-pic {
+    height: 70vh;
+    background-image: url('../image/about.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding-top: 25vh;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Text styling within .about-page-pic */
+.about-page-pic p {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(233, 220, 202);
+    padding-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 1s forwards;
+}
+
+.about-page-pic h1 {
+    font-size: 3em;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 0.5s forwards;
+}
+
+/* Styles for .about-win section */
+.about-win {
+    width: 100vw;
+    height: 120vh;
+    padding-top: 20vh;
+    display: flex;
+    background-color: whitesmoke;
+    animation: slideIn 1s ease-out;
+}
+
+/* Styles for .about-feedback section */
+.about-feedback {
+    position: relative;
+    height: 140vh;
+    width: 100vw;
+    background-color: #F3F4F7;
+    animation: slideIn 1s ease-out 0.5s;
+}
+
+/* Styles for .about-offer section */
+.about-offer {
+    height: 170vh;
+    width: 100vw;
+    background-color: #f3f4f8;
+    position: relative;
+    display: flex;
+    z-index: 2;
+    animation: slideIn 1s ease-out 1s;
+}
+
+/* Styles for .about-end section */
+.about-end {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    animation: slideIn 1s ease-out 1.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-page-pic h1 {
+        font-size: 2em;
+    }
+
+    .about-page-pic p {
+        font-size: smaller;
+    }
+
+    .about-win, .about-feedback, .about-offer, .about-end {
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    .about-offer {
+        height: auto;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

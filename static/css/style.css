@@ -1330,102 +1330,208 @@ margin: 8px ;
 
 
  /* about page styling */
- .about-page-pic{
-    
+.about-page-pic {
     height: 70vh;
-    background-image:url('../image/about.jpg');
+    background-image: url('../image/about.jpg');
     background-position: center center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
- position: relative;
-
- }
- .about-page-pic{
+    position: relative;
     text-align: center;
-    padding-top: 25VH;
- }
- .about-page-pic p{
+    padding-top: 25vh;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Text styling within .about-page-pic */
+.about-page-pic p {
     font-size: medium;
     font-weight: bold;
-    color:rgb(233, 220, 202);
+    color: rgb(233, 220, 202);
     padding-bottom: 20px;
- }
- .about-page-pic h1{
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 1s forwards;
+}
+
+.about-page-pic h1 {
     font-size: 3em;
     color: white;
- }
- .about-win{
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 0.5s forwards;
+}
+
+/* Styles for .about-win section */
+.about-win {
     width: 100vw;
     height: 120vh;
     padding-top: 20vh;
     display: flex;
-    background-color:whitesmoke;
-    
+    background-color: whitesmoke;
+    animation: slideIn 1s ease-out;
+}
 
- }
- .about-feedback{
+/* Styles for .about-feedback section */
+.about-feedback {
     position: relative;
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
     background-color: #F3F4F7;
-    
+    animation: slideIn 1s ease-out 0.5s;
 }
-.about-offer{
-        height: 170vh;
-        width: 100vw;
-       background-color: #f3f4f8;
-        position: relative;
-        display: flex;
-        z-index: 2;
+
+/* Styles for .about-offer section */
+.about-offer {
+    height: 170vh;
+    width: 100vw;
+    background-color: #f3f4f8;
+    position: relative;
+    display: flex;
+    z-index: 2;
+    animation: slideIn 1s ease-out 1s;
+}
+
+/* Styles for .about-end section */
+.about-end {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    animation: slideIn 1s ease-out 1.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-page-pic h1 {
+        font-size: 2em;
     }
-    .about-end{
-    
-        position: relative;
-        height: 70vh;
-        width: 100vw;
-        background-color: #272727;
-        display: flex;
-        justify-content: space-around;
+
+    .about-page-pic p {
+        font-size: smaller;
     }
+
+    .about-win, .about-feedback, .about-offer, .about-end {
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    .about-offer {
+        height: auto;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 
     /* code of service page */
 
-    .service-page{
-        height: 100vh;
-        width: 100vw;
-        display: grid;
-        position: relative;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto;
-        justify-content: space-between;
-        background-color:whitesmoke;
-        
+   /* Service Page Layout */
+.service-page {
+    height: 120vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px;
+}
 
-    }
-    .service-page-hd{
-        grid-column: 1/5;
-        font-size: 4rem;
-        text-align: center;
-        
-        padding-bottom: 50px;
-        font-family:"Playfair Display",serif ;
-    }
-    .amenities{
-        font-family:"Playfair Display",serif ;
-    background-color:transparent;
+/* Service Page Header */
+.service-page-hd {
+    grid-column: 1 / -1;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Playfair Display", serif;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+/* Amenities Section */
+.amenities {
+    font-family: "Playfair Display", serif;
+    background-color: transparent;
     height: 40vh;
-    width: 24vw;
-    }
-    .services-end{
-        
-        position: relative;
-        height: 70vh;
-        width: 100vw;
-        background-color: #272727;
-        display: flex;
-        justify-content: space-around;
+    width: 100%;
+    max-width: 24vw;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.amenities:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Services End Section */
+.services-end {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
     }
 
+    .service-page-hd {
+        font-size: 2.5rem;
+    }
+
+    .amenities {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .services-end {
+        flex-direction: column;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
