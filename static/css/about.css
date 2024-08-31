@@ -12,7 +12,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
-    /* this is only works when we use display flex property */
     justify-content: space-around;
 }
 .top-nav-col1{
@@ -74,7 +73,6 @@ color: white;
     width: 50%;
     font-family:"Playfair Display",serif ;
 }
-/* General Styles */
 body {
     font-family: "Playfair Display", serif;
 }
@@ -90,8 +88,6 @@ body {
     padding-top: 25vh;
     animation: fadeIn 2s ease-in-out;
 }
-
-/* Text styling within .about-page-pic */
 .about-page-pic p {
     font-size: medium;
     font-weight: bold;
@@ -107,8 +103,6 @@ body {
     opacity: 0;
     animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
-
-/* Styles for .about-win section */
 .about-win {
     width: 100vw;
     height: 120vh;
@@ -117,8 +111,6 @@ body {
     background-color: whitesmoke;
     animation: slideIn 1s ease-out;
 }
-
-/* Styles for .about-feedback section */
 .about-feedback {
     position: relative;
     height: 140vh;
@@ -126,8 +118,6 @@ body {
     background-color: #F3F4F7;
     animation: slideIn 1s ease-out 0.5s;
 }
-
-/* Styles for .about-offer section */
 .about-offer {
     height: 170vh;
     width: 100vw;
@@ -137,8 +127,6 @@ body {
     z-index: 2;
     animation: slideIn 1s ease-out 1s;
 }
-
-/* Styles for .about-end section */
 .about-end {
     position: relative;
     height: 70vh;

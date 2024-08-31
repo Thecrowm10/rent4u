@@ -12,7 +12,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
-    /* this is only works when we use display flex property */
     justify-content: space-around;
 }
 .top-nav-col1{
@@ -74,7 +73,6 @@ color: white;
     width: 50%;
     font-family:"Playfair Display",serif ;
 }
-/* General Styles */
 body {
     font-family: "Playfair Display", serif;
 }
@@ -204,9 +202,6 @@ body {
     border: 1px solid #FC456A;
     color: #FC456A;
 }
-
-
-/* General Styles */
 .win {
     top: 110vh;
     width: 100vw;
@@ -254,8 +249,8 @@ body {
 
 .win1 a, .win2 a, .win3 a {
     display: block;
-    text-align: center; /* Center links for better appearance on smaller screens */
-    margin: 10px auto; /* Center the link with margin auto */
+    text-align: center;
+    margin: 10px auto;
 }
 
 .bk button {
@@ -368,20 +363,19 @@ margin: 8px ;
 .feedback {
     position: relative;
     top: 80vh;
-    height: auto; /* Changed to auto to accommodate content on smaller screens */
+    height: auto;
     width: 100vw;
     background-color: #F3F4F7;
     display: flex;
-    flex-direction: column; /* Ensures content stacks vertically */
-    align-items: center; /* Centers content horizontally */
-}
+    flex-direction: column; 
+    align-items: center;}
 
 .feedback-heading h2 {
     text-align: center;
-    font-size: 3em; /* Adjusted font size for better readability */
+    font-size: 3em;
     font-family: "Playfair Display", serif;
-    padding-top: 50px; /* Adjusted padding */
-    padding-bottom: 30px; /* Adjusted padding */
+    padding-top: 50px; 
+    padding-bottom: 30px;
     font-weight: 400;
 }
 
@@ -393,9 +387,9 @@ margin: 8px ;
 }
 
 .fb-item-image {
-    height: 60px; /* Adjusted size */
-    width: 60px; /* Adjusted size */
-    padding-top: 10px; /* Adjusted padding */
+    height: 60px; 
+    width: 60px; 
+    padding-top: 10px;
 }
 
 .fb-item-image img {
@@ -406,26 +400,26 @@ margin: 8px ;
 
 .feedback-content-item {
     background-color: white;
-    height: auto; /* Adjusted height */
-    width: 80%; /* Full width on smaller screens */
+    height: auto; 
+    width: 80%; 
     max-width: 600px; /* Maximum width for better readability */
     border-radius: 7px;
     border: transparent;
     display: flex;
-    flex-direction: column; /* Stacks content vertically */
-    align-items: center; /* Centers content horizontally */
-    padding: 20px; /* Added padding for better spacing */
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px; 
 }
 
 .fb-item-content {
-    width: 100%; /* Full width on smaller screens */
-    padding-top: 10px; /* Adjusted padding */
-    text-align: center; /* Centers text */
+    width: 100%; 
+    padding-top: 10px; 
+    text-align: center;
 }
 
 .intro {
     padding: 5px 0px 5px 0px;
-    font-size: 1.2em; /* Adjusted font size */
+    font-size: 1.2em; 
     font-weight: 200;
     font-family: "Playfair Display", serif;
 }
@@ -556,7 +550,7 @@ margin: 8px ;
     background-color: rgba(252, 69, 106, 0.4);
     height: 60vh;
     width: 100vw;
-    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    box-sizing: border-box; 
 }
 
 .pic-2-hd b {
@@ -576,7 +570,7 @@ margin: 8px ;
     width: 120px;
     border-radius: 8px;
     cursor: pointer;
-    font-family: "Playfair Display", serif; /* Ensure consistency in font */
+    font-family: "Playfair Display", serif; 
 }
 
 .pic-2-bt1 button {
@@ -609,7 +603,7 @@ margin: 8px ;
     width: 100vw;
     background-color: #f3f4f8;
     z-index: 2;
-    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    box-sizing: border-box; 
 }
 
 .blog-hd1 {
@@ -628,28 +622,28 @@ margin: 8px ;
 }
 
 .blog-block {
-    height: auto; /* Allow height to adjust based on content */
+    height: auto; 
     width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; /* Wrap items to new lines on smaller screens */
-    gap: 20px; /* Add space between items */
-    box-sizing: border-box; /* Ensure padding and margin are included in width */
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 .blog-area {
-    height: auto; /* Allow height to adjust based on content */
+    height: auto;
     width: 100%;
-    max-width: 30vw; /* Set maximum width */
+    max-width: 30vw;
     background-color: white;
     border: 1px solid white;
     border-radius: 7px;
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    box-sizing: border-box;
 }
 
 .blg-pic img {
     width: 100%;
-    height: auto; /* Adjust height based on image aspect ratio */
+    height: auto; 
     border-radius: 6px;
 }
 
@@ -715,21 +709,21 @@ margin: 8px ;
 .end {
     top: 30vh;
     position: relative;
-    height: auto; /* Adjust height to fit content */
+    height: auto; 
     width: 100vw;
     background-color: #272727;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    padding: 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    flex-wrap: wrap; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 .end1, .end4 {
     width: 100%;
-    max-width: 25vw; /* Set maximum width for larger screens */
+    max-width: 25vw; 
     padding-top: 100px;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    box-sizing: border-box; 
 }
 
 .end1 b, .end4 b {
@@ -796,8 +790,8 @@ margin: 8px ;
 
 .subscribe-sub input {
     height: 40px;
-    width: 100%; /* Make input full-width */
-    max-width: 200px; /* Limit maximum width */
+    width: 100%;
+    max-width: 200px;
     background-color: rgb(46, 44, 44);
     border: none;
     padding-left: 10px;
@@ -806,7 +800,7 @@ margin: 8px ;
 
 .subscribe-sub button {
     width: 100%;
-    max-width: 40px; /* Limit maximum width */
+    max-width: 40px; 
     height: 40px;
     border: 1px solid #fc456a;
     background-color: #fc456a;
@@ -891,7 +885,7 @@ margin: 8px ;
     }
 
     .win {
-        height: auto; /* Adjust height for smaller screens */
+        height: auto; 
     }
 
     .bk {
@@ -912,9 +906,9 @@ margin: 8px ;
         padding-left: 10px;
     }
     .bk button {
-        height: 6vh; /* Slightly larger for easier tapping */
-        width: 10vw; /* Adjust width for better fit */
-        font-size: 0.8em; /* Adjust font size for readability */
+        height: 6vh; 
+        width: 10vw; 
+        font-size: 0.8em;
     }
 
     .room-grid {
@@ -937,7 +931,7 @@ margin: 8px ;
 
     .win {
         flex-direction: column;
-        height: auto; /* Adjust height for mobile screens */
+        height: auto;
     }
 
     .bk {
@@ -959,13 +953,13 @@ margin: 8px ;
     }
 
     .win1 a, .win2 a, .win3 a {
-        padding-left: 0; /* Remove left padding on mobile */
+        padding-left: 0;
         text-align: center;
     }
     .bk button {
-        height: 7vh; /* Increase height for better touch target */
-        width: 12vw; /* Adjust width for mobile screens */
-        font-size: 0.9em; /* Increase font size for readability */
+        height: 7vh; 
+        width: 12vw; 
+        font-size: 0.9em; 
     }
 
     .room-grid {
@@ -1007,128 +1001,128 @@ margin: 8px ;
         font-size: 2.5em;
     }
     .offer {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
     }
 
     .offer-pic {
-        width: 100%; /* Full width for smaller screens */
-        margin-bottom: 20px; /* Added margin for spacing */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .offer-pic img {
-        padding-left: 0; /* Remove left padding */
+        padding-left: 0; 
     }
 
     .offer-pic h9 {
-        font-size: 1.5em; /* Adjusted font size */
-        padding-left: 0; /* Remove left padding */
+        font-size: 1.5em; 
+        padding-left: 0; 
     }
 
     .offer-pic p {
-        font-size: 1em; /* Adjusted font size */
-        padding-left: 0; /* Remove left padding */
+        font-size: 1em;
+        padding-left: 0; 
     }
 
     .offer-text {
-        width: 100%; /* Full width for smaller screens */
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Adjust row layout */
+        width: 100%; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
     }
 
     .offer-text-hd {
-        font-size: 2.5em; /* Adjusted font size */
+        font-size: 2.5em;
         padding: 0px 0px 5px 0px;
     }
 
     .offer-text p {
-        font-size: 1em; /* Adjusted font size */
+        font-size: 1em; 
         padding: 0px 0px 5px 0px;
     }
 
     .offer-text-offer {
-        height: auto; /* Adjusted height */
-        width: 100%; /* Full width */
-        max-width: 600px; /* Maximum width for readability */
-        padding-left: 0; /* Remove left padding */
-        flex-direction: column; /* Stack items vertically */
+        height: auto; 
+        width: 100%; 
+        max-width: 600px;
+        padding-left: 0; 
+        flex-direction: column;
     }
 
     .offer-icon {
-        height: 50px; /* Adjusted size */
-        width: 50px; /* Adjusted size */
-        margin-bottom: 10px; /* Added margin for spacing */
+        height: 50px; 
+        width: 50px;
+        margin-bottom: 10px; 
     }
 
     .offer-icon1 {
-        font-size: 1.5em; /* Adjusted font size */
+        font-size: 1.5em; 
     }
 
     .offer-text-offer h8 {
-        font-size: 1em; /* Adjusted font size */
+        font-size: 1em; 
         padding: 10px 0;
     }
 
     .offer-text-offer p {
-        font-size: 0.8em; /* Adjusted font size */
+        font-size: 0.8em; 
         padding: 10px 0;
     }
     .pic-2-hd {
-        height: 50vh; /* Reduce height for smaller screens */
+        height: 50vh; 
     }
 
     .pic-2-hd b {
-        font-size: 2.5em; /* Adjust font size for headings */
+        font-size: 2.5em; 
     }
 
     .pic-2-hd p {
-        font-size: 1em; /* Adjust font size for paragraphs */
+        font-size: 1em; 
     }
 
     .pic-2-bt button {
-        height: 35px; /* Adjust button height */
-        width: 100px; /* Adjust button width */
-        font-size: 0.9em; /* Adjust font size on buttons */
+        height: 35px; 
+        width: 100px; 
+        font-size: 0.9em; 
     }
     .blog-hd1 {
-        font-size: 2.5em; /* Adjust font size for headings */
-        padding-top: 80px; /* Adjust padding for smaller screens */
+        font-size: 2.5em; 
+        padding-top: 80px; 
     }
 
     .blog-hd-2 {
-        padding: 15px 0 30px; /* Adjust padding for smaller screens */
+        padding: 15px 0 30px;
     }
 
     .blog-area {
-        max-width: 100%; /* Make blog areas full width on smaller screens */
+        max-width: 100%; 
     }
 
     .blg-text-hd1 {
-        font-size: 1.5em; /* Adjust font size for headings */
+        font-size: 1.5em; 
     }
     .end {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .end1, .end4 {
-        max-width: 90%; /* Increase maximum width for better fit */
-        padding-top: 50px; /* Adjust padding for smaller screens */
+        max-width: 90%; 
+        padding-top: 50px;
     }
 
     .end1 b, .end4 b {
-        font-size: 1.2em; /* Reduce font size for headings */
+        font-size: 1.2em; 
     }
 
     .end1 p, .end4 p {
-        padding: 20px 5px; /* Adjust padding for smaller screens */
+        padding: 20px 5px; 
     }
 
     .subscribe-sub input, .subscribe-sub button {
-        max-width: 100%; /* Ensure full width */
+        max-width: 100%; 
     }
 
     .social button {
-        width: 35px; /* Adjust button size */
+        width: 35px; 
     }
 }
 
@@ -1144,15 +1138,15 @@ margin: 8px ;
 
     .pic {
         padding-bottom: 100px;
-        background-size: cover; /* Ensures the background image covers the area */
+        background-size: cover; 
     }
     .win {
-        padding: 10px; /* Add padding for smaller screens */
+        padding: 10px;
     }
 
     .bk {
         width: 90%;
-        margin: 0 auto 30px auto; /* Center and adjust margins for smaller screens */
+        margin: 0 auto 30px auto;
     }
 
     .win1, .win2, .win3 {
@@ -1160,7 +1154,7 @@ margin: 8px ;
     }
 
     .win1 img, .win2 img, .win3 img {
-        height: auto; /* Maintain aspect ratio on smaller screens */
+        height: auto; 
     }
 
     .win1 h3, .win2 h3, .win3 h3 {
@@ -1173,12 +1167,12 @@ margin: 8px ;
 
     .win1 a, .win2 a, .win3 a {
         padding-left: 0;
-        font-size: small; /* Adjust font size for links */
+        font-size: small; 
     }
     .bk button {
-        height: 8vh; /* Larger height for easier interaction */
-        width: 15vw; /* Adjust width to fit mobile screens */
-        font-size: 1em; /* Increase font size for better readability */
+        height: 8vh; 
+        width: 15vw;
+        font-size: 1em; 
     }
 
     .tab1 {
@@ -1224,96 +1218,96 @@ margin: 8px ;
         width: 90%;
     }
     .offer-pic h9 {
-        font-size: 1em; /* Further reduced font size */
+        font-size: 1em; 
     }
 
     .offer-pic p {
-        font-size: 0.8em; /* Further reduced font size */
+        font-size: 0.8em; 
     }
 
     .offer-text-hd {
-        font-size: 1.5em; /* Further reduced font size */
+        font-size: 1.5em;
     }
 
     .offer-text p {
-        font-size: 0.8em; /* Further reduced font size */
+        font-size: 0.8em; 
     }
 
     .offer-text-offer h8 {
-        font-size: 0.9em; /* Further reduced font size */
+        font-size: 0.9em; 
     }
 
     .offer-text-offer p {
-        font-size: 0.7em; /* Further reduced font size */
+        font-size: 0.7em; 
     }
 
     .offer-icon {
-        height: 40px; /* Further reduced size */
-        width: 40px; /* Further reduced size */
+        height: 40px; 
+        width: 40px; 
     }
 
     .offer-icon1 {
-        font-size: 1.2em; /* Further reduced font size */
+        font-size: 1.2em; 
     }
     .pic-2-hd {
-        height: 40vh; /* Further reduce height for very small screens */
-        padding-top: 60px; /* Adjust padding for smaller screens */
+        height: 40vh; 
+        padding-top: 60px; 
     }
 
     .pic-2-hd b {
-        font-size: 1.8em; /* Further reduce font size */
+        font-size: 1.8em; 
     }
 
     .pic-2-hd p {
-        font-size: 0.9em; /* Further reduce font size */
+        font-size: 0.9em; 
     }
 
     .pic-2-bt button {
-        height: 30px; /* Further adjust button height */
-        width: 80px; /* Further adjust button width */
-        font-size: 0.8em; /* Further adjust font size on buttons */
+        height: 30px;
+        width: 80px; 
+        font-size: 0.8em; 
     }
     .blog-hd1 {
-        font-size: 1.8em; /* Further reduce font size */
-        padding-top: 60px; /* Further reduce padding */
+        font-size: 1.8em; 
+        padding-top: 60px; 
     }
 
     .blog-hd-2 {
-        padding: 10px 0 20px; /* Further reduce padding */
+        padding: 10px 0 20px; 
     }
 
     .blog-block {
-        flex-direction: column; /* Stack blog areas vertically on very small screens */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .blog-area {
-        max-width: 100%; /* Ensure full width */
+        max-width: 100%;
     }
 
     .blg-text-hd1 {
-        font-size: 1.2em; /* Further reduce font size */
+        font-size: 1.2em; 
     }
     .end1, .end4 {
-        max-width: 100%; /* Ensure full width */
-        padding-top: 30px; /* Further reduce padding */
+        max-width: 100%; 
+        padding-top: 30px; 
     }
 
     .end1 b, .end4 b {
-        font-size: 1em; /* Further reduce font size for headings */
+        font-size: 1em; 
     }
 
     .end1 p, .end4 p {
-        padding: 15px 5px; /* Further adjust padding */
+        padding: 15px 5px;
     }
 
     .subscribe-sub input, .subscribe-sub button {
-        width: 100%; /* Ensure full width */
-        max-width: 100%; /* Ensure full width */
+        width: 100%; 
+        max-width: 100%; 
     }
 
     .social button {
-        width: 30px; /* Further adjust button size */
+        width: 30px; 
     }
 }
 
@@ -1342,8 +1336,6 @@ margin: 8px ;
     padding-top: 25vh;
     animation: fadeIn 2s ease-in-out;
 }
-
-/* Text styling within .about-page-pic */
 .about-page-pic p {
     font-size: medium;
     font-weight: bold;
@@ -1359,8 +1351,6 @@ margin: 8px ;
     opacity: 0;
     animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
-
-/* Styles for .about-win section */
 .about-win {
     width: 100vw;
     height: 120vh;
@@ -1369,8 +1359,6 @@ margin: 8px ;
     background-color: whitesmoke;
     animation: slideIn 1s ease-out;
 }
-
-/* Styles for .about-feedback section */
 .about-feedback {
     position: relative;
     height: 140vh;
@@ -1378,8 +1366,6 @@ margin: 8px ;
     background-color: #F3F4F7;
     animation: slideIn 1s ease-out 0.5s;
 }
-
-/* Styles for .about-offer section */
 .about-offer {
     height: 170vh;
     width: 100vw;
@@ -1389,8 +1375,6 @@ margin: 8px ;
     z-index: 2;
     animation: slideIn 1s ease-out 1s;
 }
-
-/* Styles for .about-end section */
 .about-end {
     position: relative;
     height: 70vh;
@@ -1446,8 +1430,6 @@ margin: 8px ;
 
 
     /* code of service page */
-
-   /* Service Page Layout */
 .service-page {
     height: 120vh;
     width: 100vw;
@@ -1460,8 +1442,6 @@ margin: 8px ;
     animation: fadeIn 2s ease-in-out;
     padding: 20px;
 }
-
-/* Service Page Header */
 .service-page-hd {
     grid-column: 1 / -1;
     font-size: 4rem;
@@ -1471,8 +1451,6 @@ margin: 8px ;
     opacity: 0;
     animation: fadeIn 2s ease-in-out 0.5s forwards;
 }
-
-/* Amenities Section */
 .amenities {
     font-family: "Playfair Display", serif;
     background-color: transparent;
@@ -1490,8 +1468,6 @@ margin: 8px ;
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-/* Services End Section */
 .services-end {
     position: relative;
     height: 70vh;
