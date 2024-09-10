@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.top-nav{
-    font-family:"Playfair Display",serif ;
-    width:100vw;
+
+body {
+    font-family: "Playfair Display", serif;
+}
+.top-nav {
+    font-family: "Playfair Display", serif;
+    width: 100vw;
     height: 4vh;
     background-color: #fc456a;
     padding-top: 5px;
@@ -14,88 +18,105 @@
     display: flex;
     justify-content: space-around;
 }
-.top-nav-col1{
+
+.top-nav-col1 {
     width: 50%;
     color: rgb(148, 138, 138);
     display: flex;
     justify-content: center;
 }
-.top-nav-col1 a{
+
+.top-nav-col1 a {
     text-decoration: none;
     color: white;
 }
-.top-nav-col2 i{
-color: white;
+
+.top-nav-col2 i {
+    color: white;
 }
-.top-nav-col2{
+
+.top-nav-col2 {
     width: 50%;
     display: flex;
-    justify-content:center;
-    gap: 20px;    
+    justify-content: center;
+    gap: 20px;
 }
-.second-nav{
-    width:100vw;
+.second-nav {
+    width: 100vw;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
-    display:flex;
-    font-family:"Playfair Display",serif ;
+    display: flex;
+    font-family: "Playfair Display", serif;
     justify-content: space-around;
 }
-.second-nav-col1{
+
+.second-nav-col1 {
     width: 30%;
 }
-.second-nav-col1 b{
+
+.second-nav-col1 b {
     color: black;
 }
-.second-nav-col1 a{
+
+.second-nav-col1 a {
     font-size: xx-large;
-    width:50% ;
-    text-decoration: none;  
-    font-family:"Playfair Display",serif ;
-}
-.second-nav-col1 span{
-    color: #fc456a;
-}
-.second-nav-col2 button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer; 
-    font-size: medium;
-    color: gray;
-}
-.second-nav-col2{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    font-size:xx-large;
-    font-weight: 400;
     width: 50%;
-    font-family:"Playfair Display",serif ;
-}
-body {
+    text-decoration: none;
     font-family: "Playfair Display", serif;
 }
 
+.second-nav-col1 span {
+    color: #fc456a;
+}
+
+.second-nav-col2 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    color: gray;
+}
+
+.second-nav-col2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: xx-large;
+    font-weight: 400;
+    width: 50%;
+    font-family: "Playfair Display", serif;
+}
 .pic {
     height: 100vh;
     background-image: url('../image/rent');
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover; /* Changed to cover to maintain aspect ratio */
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     width: 100vw;
     padding-bottom: 300px;
     position: relative;
     z-index: 1;
+    animation: fadeIn 2s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 .tab1 {
     padding-top: 150px;
     margin-left: 5vw;
     width: 70%;
     position: absolute;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .subhed1 {
@@ -146,7 +167,6 @@ body {
     background-color: transparent;
     color: white;
 }
-
 .header-form {
     position: absolute;
     background-color: white;
@@ -156,6 +176,23 @@ body {
     border-radius: 2px 2px 10px 10px;
     height: 65vh;
     width: 29vw;
+    animation: slideLeftBounce 1.5s ease-in-out;
+}
+@keyframes slideLeftBounce {
+    0% {
+        transform: translateX(-100vw) translateY(0); 
+        opacity: 0; 
+    }
+    60% {
+        transform: translateX(10vw) translateY(-30px); 
+        opacity: 1; 
+    }
+    80% {
+        transform: translateX(0) translateY(-15px); 
+    }
+    100% {
+        transform: translateX(0) translateY(0); 
+    }
 }
 
 .header-form form {
@@ -203,13 +240,14 @@ body {
     color: #FC456A;
 }
 .win {
-    top: 110vh;
+    margin-top: -10vh;
     width: 100vw;
     height: 45vw;
     display: flex;
     background-color: whitesmoke;
-    position: absolute;
-    overflow: auto; /* Added to handle content overflow */
+    position: relative;
+    overflow: auto;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .bk {
@@ -221,6 +259,11 @@ body {
     border-radius: 10px;
     border-block-end-style: inset;
     z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.bk:hover {
+    transform: scale(1.02);
 }
 
 .win1, .win2, .win3 {
@@ -231,6 +274,11 @@ body {
     height: 41vh;
     width: 80%;
     margin: 20px 25px;
+    transition: transform 0.3s ease;
+}
+
+.win1 img:hover, .win2 img:hover, .win3 img:hover {
+    transform: scale(1.1);
 }
 
 .win1 h3, .win2 h3, .win3 h3 {
@@ -269,10 +317,9 @@ body {
     background-color: transparent;
     color: #fc456a;
 }
+
 .row-room{
     position: relative;
-    top: 80vh;
-    background-color: #dfdfecc0;
     width: 100%;
 }
 .room-hd p{
@@ -289,10 +336,15 @@ body {
 }
 .row-room-bk{
     display: flex;
-    transition: all 0.6s;
+    transition: transform 0.6s ease;
+    background-color: white;
+    color: #FC456A;
 }
 .row-room-bk:hover{
-    background-color: #fc456a;
+    transform: scale(1.01);
+    background-color: #FC456A;
+    color: white;
+    
 }
 
 .one-pic {  
@@ -306,9 +358,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    background-color: white;
-     
+    gap: 20px; 
 }
 .one-pic img{
     width: 100%;
@@ -316,7 +366,6 @@ body {
 }
 
 .one-star{
- color: #fc456a;
  font-family: "Playfair Display", serif;
  font-weight: 100;
 }
@@ -340,7 +389,6 @@ margin: 8px ;
     padding-top: 10px;
     padding-left: 10px;
     list-style-type:none;
-    color: gray;
     font-family:"Playfair Display",serif ;
 }
 .one-bt{
@@ -362,7 +410,6 @@ margin: 8px ;
 }
 .feedback {
     position: relative;
-    top: 80vh;
     height: auto;
     width: 100vw;
     background-color: #F3F4F7;
@@ -381,9 +428,9 @@ margin: 8px ;
 
 .feedback-content {
     display: flex;
-    flex-direction: column; /* Stacks items vertically on smaller screens */
+    flex-direction: column;
     gap: 20px;
-    align-items: center; /* Centers items horizontally */
+    align-items: center; 
 }
 
 .fb-item-image {
@@ -402,7 +449,7 @@ margin: 8px ;
     background-color: white;
     height: auto; 
     width: 80%; 
-    max-width: 600px; /* Maximum width for better readability */
+    max-width: 600px;
     border-radius: 7px;
     border: transparent;
     display: flex;
@@ -424,7 +471,6 @@ margin: 8px ;
     font-family: "Playfair Display", serif;
 }
 .offer {
-    top: 80vh;
     height: 150vh;
     width: 100vw;
     background-color: #f3f4f8;
@@ -494,8 +540,12 @@ margin: 8px ;
     position: relative;
     display: flex;
     padding-left: 10px;
+    transition: transform 0.6s ease;
 }
-
+.offer-text-offer:hover{
+    transform: scale(1.01);
+    background-color: rgb(236, 235, 235);
+}
 .offer-icon {
     height: 70px;
     width: 70px;
@@ -530,7 +580,7 @@ margin: 8px ;
 }
 
 .pic-2 {
-    top: 48vh;
+    margin-top: -32vh;
     height: 100vh;
     background-image: url('../image/rent');
     background-position: center center;
@@ -597,7 +647,7 @@ margin: 8px ;
     color: white;
 }
 .blog {
-    top: 30vh;
+    margin-top: -10vh;
     position: relative;
     height: 170vh;
     width: 100vw;
@@ -622,28 +672,32 @@ margin: 8px ;
 }
 
 .blog-block {
-    height: auto; 
+    height: 90vh; 
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Wrap items to new lines on smaller screens */
+    flex-wrap: wrap; 
     gap: 20px;
     box-sizing: border-box;
 }
 
 .blog-area {
-    height: auto;
+    height: 100%;
     width: 100%;
     max-width: 30vw;
     background-color: white;
     border: 1px solid white;
     border-radius: 7px;
     box-sizing: border-box;
+    transition: transform 0.6s ease;
+}
+.blog-area:hover{
+    transform: scale(1.02);
 }
 
-.blg-pic img {
+.blg-pic img{
     width: 100%;
-    height: auto; 
+    height:40vh;
     border-radius: 6px;
 }
 
@@ -707,20 +761,17 @@ margin: 8px ;
 }
 
 .end {
-    top: 30vh;
     position: relative;
-    height: auto; 
+    height: 70vh;
     width: 100vw;
     background-color: #272727;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
-    padding: 20px; 
-    box-sizing: border-box; 
+    animation: slideIn 1s ease-out 1.5s;
 }
 
 .end1, .end4 {
-    width: 100%;
+    width: 25vw;
     max-width: 25vw; 
     padding-top: 100px;
     box-sizing: border-box; 
@@ -766,14 +817,14 @@ margin: 8px ;
     display: inline-block;
     padding: 4px 10px;
     margin-bottom: 7px;
-    margin-right: 4px;
     border-radius: 4px;
-    transition: all 0.5s;
+    transition: transform 0.5s ease-in;
     font-size: small;
 }
 
 .cloud:hover {
     border: 1px solid black;
+    transform: scale(1.03);
 }
 
 .end-but {
@@ -783,7 +834,6 @@ margin: 8px ;
     font-size: large;
     font-family: "Playfair Display", serif;
 }
-
 .subscribe-sub {
     margin-top: 20px;
 }
@@ -807,6 +857,10 @@ margin: 8px ;
     color: white;
     font-family: "Playfair Display", serif;
     cursor: pointer;
+    transition: transform 0.6s ease-in;
+}
+.subscribe-sub button:hover{
+    transform: scale(1.1);
 }
 
 .follow {
@@ -823,24 +877,24 @@ margin: 8px ;
     margin-left: 10px;
     border-radius: 5px;
     width: 40px;
+    color: white;
     background-color: #272727;
     border: 1px solid rgb(107, 102, 102);
     cursor: pointer;
     font-family: "Playfair Display", serif;
+    transition: transform 0.6s ease-out;
 }
 
 .social button:hover {
+    color:#FC456A;
+    transform: scale(1.15);
     border: 1px solid #FC456A;
 }
 
 .social i {
-    color: white;
     font-size: medium;
 }
 
-.social i:hover {
-    color: #fc456a;
-}
 
 
 @media screen and (max-width: 1200px) {
