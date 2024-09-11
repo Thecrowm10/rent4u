@@ -84,8 +84,46 @@ body {
     gap: 50px;
     font-size: xx-large;
     font-weight: 400;
-    width: 50%;
+    width: 60%;
     font-family: "Playfair Display", serif;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn img{
+  margin-top: 2vh;
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdown-content i{
+    color: #fc456a;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-size: medium;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 .pic {
     height: 100vh;
@@ -148,9 +186,11 @@ body {
     font-size: x-large;
     border: 1px solid #fc456a;
     transition: all 0.6s;
+      animation:  ease-in-out;
 }
 
 .bt1 button:hover {
+    transform: scale(1.03);
     background-color: transparent;
     color: #fc456a;
 }
@@ -161,9 +201,11 @@ body {
     font-size: x-large;
     border: 1px solid white;
     transition: all 0.6s;
+    animation:  ease-in-out;
 }
 
 .bt2 button:hover {
+    transform: scale(1.03);
     background-color: transparent;
     color: white;
 }
@@ -232,9 +274,11 @@ body {
     border-radius: 5px;
     color: #f2f2f2;
     transition: all 0.6s;
+    animation:  ease-in-out;
 }
 
 .header-form button:hover {
+    transform: scale(1.03);
     background-color: transparent;
     border: 1px solid #FC456A;
     color: #FC456A;
@@ -259,7 +303,8 @@ body {
     border-radius: 10px;
     border-block-end-style: inset;
     z-index: 2;
-    transition: transform 0.3s ease;
+    transition: all 0.4s;
+    animation: ease;
 }
 
 .bk:hover {
@@ -274,7 +319,9 @@ body {
     height: 41vh;
     width: 80%;
     margin: 20px 25px;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ;
+    animation: ease;
+
 }
 
 .win1 img:hover, .win2 img:hover, .win3 img:hover {
@@ -336,7 +383,8 @@ body {
 }
 .row-room-bk{
     display: flex;
-    transition: transform 0.6s ease;
+    transition: all 0.6s ;
+    animation: ease;
     background-color: white;
     color: #FC456A;
 }
@@ -592,7 +640,7 @@ margin: 8px ;
     padding-top: 15%;
     text-align: center;
     gap: 20px;
-    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    box-sizing: border-box; 
 }
 
 .pic-2-hd {
@@ -628,9 +676,11 @@ margin: 8px ;
     color: white;
     border: 1px solid #fc456a;
     transition: all 0.6s;
+    animation: ease-in-out;
 }
 
 .pic-2-bt1 button:hover {
+    transform: scale(1.03);
     background-color: transparent;
     color: #fc456a;
 }
@@ -640,9 +690,11 @@ margin: 8px ;
     color: black;
     border: 1px solid white;
     transition: all 0.6s;
+    animation: ease-in-out;
 }
 
 .pic-2-bt2 button:hover {
+    transform: scale(1.03);
     background-color: transparent;
     color: white;
 }
@@ -818,7 +870,8 @@ margin: 8px ;
     padding: 4px 10px;
     margin-bottom: 7px;
     border-radius: 4px;
-    transition: transform 0.5s ease-in;
+    transition: all 0.6s;
+    animation: ease-in-out;
     font-size: small;
 }
 
@@ -857,7 +910,8 @@ margin: 8px ;
     color: white;
     font-family: "Playfair Display", serif;
     cursor: pointer;
-    transition: transform 0.6s ease-in;
+    animation: ease-in-out;
+    transition: all 0.6s;
 }
 .subscribe-sub button:hover{
     transform: scale(1.1);
@@ -882,7 +936,8 @@ margin: 8px ;
     border: 1px solid rgb(107, 102, 102);
     cursor: pointer;
     font-family: "Playfair Display", serif;
-    transition: transform 0.6s ease-out;
+    transition:all 0.6s ;
+    animation: ease-in-out;
 }
 
 .social button:hover {
