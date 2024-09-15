@@ -97,7 +97,6 @@ body {
     height: 6vh;
     width: 3vw;
 }
-
 /* Dropdown Content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -110,8 +109,6 @@ body {
 .dropdown-content i{
     color: #fc456a;
 }
-
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     font-size: medium;

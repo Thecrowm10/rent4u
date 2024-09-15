@@ -86,19 +86,24 @@ router.get("/",(req,res)=>
                 }  
             }
             )
-            router.use("/index",(req,res)=>
+ router.use("/index",(req,res)=>
                 {
                     res.render("index")
                     res.end()
                 })
-            router.use("/about",(req,res)=>
+router.use("/about",(req,res)=>
             {
                 res.render("about")
                 res.end()
             })
-            router.use("/services",(req,res)=>
+router.use("/services",(req,res)=>
                 {
                     res.render("services")
                     res.end()
                 })
+router.use("/apartment",(req,res)=>
+                    {
+                        res.render("apartment")
+                        res.end()
+                    })
     module.exports = router;
