@@ -106,4 +106,9 @@ router.use("/apartment",(req,res)=>
                         res.render("apartment")
                         res.end()
                     })
+router.use("/blog",(req,res)=>
+                        {
+                            res.render("blog")
+                            res.end()
+                        })
     module.exports = router;

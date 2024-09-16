@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-nav{
+    font-family:"Playfair Display",serif ;
+    width:100vw;
+    height: 4vh;
+    background-color: #fc456a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.top-nav-col1{
+    width: 50%;
+    color: rgb(148, 138, 138);
+    display: flex;
+    justify-content: center;
+}
+.top-nav-col1 a{
+    text-decoration: none;
+    color: white;
+}
+.top-nav-col2 i{
+color: white;
+}
+.top-nav-col2{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    gap: 20px;    
+}
+.second-nav{
+    width:100vw;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display:flex;
+    font-family:"Playfair Display",serif ;
+    justify-content: space-around;
+}
+.second-nav-col1{
+    width: 30%;
+}
+.second-nav-col1 b{
+    color: black;
+}
+.second-nav-col1 a{
+    font-size: xx-large;
+    width:50% ;
+    text-decoration: none;  
+    font-family:"Playfair Display",serif ;
+}
+.second-nav-col1 span{
+    color: #fc456a;
+}
+.second-nav-col2 button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+    font-size: medium;
+    color: gray;
+}
+.second-nav-col2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size:xx-large;
+    font-weight: 400;
+    width: 50%;
+    font-family:"Playfair Display",serif ;
+}
+body {
+    font-family: "Playfair Display", serif;
+}
+.about-page-pic {
+    height: 70vh;
+    background-image: url('../image/about.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding-top: 25vh;
+    animation: fadeIn 2s ease-in-out;
+}
+.about-page-pic p {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(233, 220, 202);
+    padding-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 1s forwards;
+}
+
+.about-page-pic h1 {
+    font-size: 3em;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 0.5s forwards;
+}
+.blog {
+    margin-top: -10vh;
+    position: relative;
+    height: 250vh;
+    width: 100vw;
+    background-color: #f3f4f8;
+    z-index: 2;
+    box-sizing: border-box;    
+}
+
+.blog-hd1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 120px;
+    text-shadow: 0.5px 0.5px 10px black;
+}
+
+.blog-hd-2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    padding: 20px 0 40px;
+    color: #fc456a;
+}
+
+.blog-block {
+    height: 200vh; 
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    animation: fadeIn 2s ease-in-out
+}
+
+.blog-area {
+    height: 90vh;
+    width: 100%;
+    max-width: 30vw;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-sizing: border-box;
+    transition: transform 0.6s ease;
+}
+.blog-area:hover{
+    transform: scale(1.02);
+}
+
+.blg-pic img{
+    width: 100%;
+    height:40vh;
+    border-radius: 6px;
+}
+
+.blg-text {
+    text-align: center;
+    padding: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+.blg-text-hd1 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+.blg-text-hd1:hover {
+    color: #fc456a;
+}
+
+.blg-date {
+    padding: 10px;
+}
+
+.blg-date a {
+    text-decoration: none;
+}
+
+.blg-text-hd2 {
+    color: #fc456a;
+    transition: all 0.5s;
+}
+
+.blg-text-hd2:hover {
+    color: black;
+}
+
+.blg-admin {
+    padding: 0 3px;
+    color: #fc456a;
+    transition: all 0.5s;
+}
+
+.blg-admin:hover {
+    color: black;
+}
+
+.msg {
+    color: #fc456a;
+    transition: 0.5s;
+}
+
+.msg:hover {
+    color: black;
+}
+
+.blg-text-hd3 {
+    padding-top: 10px;
+    color: #959597;
+}
+.end {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    animation: slideIn 1s ease-out 1.5s;
+}
+
+.end1, .end4 {
+    width: 25vw;
+    max-width: 25vw; 
+    padding-top: 100px;
+    box-sizing: border-box; 
+}
+
+.end1 b, .end4 b {
+    font-size: 1.5em;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.end1 p, .end4 p {
+    padding: 30px 10px;
+    color: #5c5c5f;
+    font-family: "Playfair Display", serif;
+}
+
+.end1 ul {
+    list-style: none;
+    padding: 20px 10px;
+    font-family: "Playfair Display", serif;
+    color: rgb(228, 221, 221);
+}
+
+.end1 li {
+    padding-top: 20px;
+}
+
+.end1-services-li a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.end1-label {
+    padding-top: 20px;
+}
+
+.cloud {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    transition: all 0.6s;
+    animation: ease-in-out;
+    font-size: small;
+}
+
+.cloud:hover {
+    border: 1px solid black;
+    transform: scale(1.03);
+}
+
+.end-but {
+    text-decoration: none;
+    color: #fc456a;
+    padding-left: 20px;
+    font-size: large;
+    font-family: "Playfair Display", serif;
+}
+.subscribe-sub {
+    margin-top: 20px;
+}
+
+.subscribe-sub input {
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    background-color: rgb(46, 44, 44);
+    border: none;
+    padding-left: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.subscribe-sub button {
+    width: 100%;
+    max-width: 40px; 
+    height: 40px;
+    border: 1px solid #fc456a;
+    background-color: #fc456a;
+    color: white;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    animation: ease-in-out;
+    transition: all 0.6s;
+}
+.subscribe-sub button:hover{
+    transform: scale(1.1);
+}
+
+.follow {
+    padding-top: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+.social {
+    padding-top: 20px;
+}
+
+.social button {
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 40px;
+    color: white;
+    background-color: #272727;
+    border: 1px solid rgb(107, 102, 102);
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+    transition:all 0.6s ;
+    animation: ease-in-out;
+}
+
+.social button:hover {
+    color:#FC456A;
+    transform: scale(1.15);
+    border: 1px solid #FC456A;
+}
+
+.social i {
+    font-size: medium;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
