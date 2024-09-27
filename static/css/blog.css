@@ -1,81 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.top-nav{
-    font-family:"Playfair Display",serif ;
-    width:100vw;
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+.top-nav {
+    font-family: "Playfair Display", serif;
+    width: 100vw;
     height: 4vh;
     background-color: #fc456a;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     display: flex;
     justify-content: space-around;
 }
-.top-nav-col1{
+
+.top-nav-col1 {
     width: 50%;
     color: rgb(148, 138, 138);
     display: flex;
     justify-content: center;
 }
-.top-nav-col1 a{
+
+.top-nav-col1 a {
     text-decoration: none;
     color: white;
 }
-.top-nav-col2 i{
-color: white;
-}
-.top-nav-col2{
+
+.top-nav-col2 {
     width: 50%;
     display: flex;
-    justify-content:center;
-    gap: 20px;    
+    justify-content: center;
+    gap: 20px;
 }
-.second-nav{
-    width:100vw;
+
+.top-nav-col2 i {
+    color: white;
+}
+
+.second-nav {
+    width: 100vw;
     background-color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display:flex;
-    font-family:"Playfair Display",serif ;
+    padding: 5px 0;
+    display: flex;
+    font-family: "Playfair Display", serif;
     justify-content: space-around;
 }
-.second-nav-col1{
+
+.second-nav-col1 {
     width: 30%;
 }
-.second-nav-col1 b{
+
+.second-nav-col1 b {
     color: black;
 }
-.second-nav-col1 a{
+
+.second-nav-col1 a {
     font-size: xx-large;
-    width:50% ;
-    text-decoration: none;  
-    font-family:"Playfair Display",serif ;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
 }
-.second-nav-col1 span{
+
+.second-nav-col1 span {
     color: #fc456a;
 }
-.second-nav-col2 button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer; 
-    font-size: medium;
-    color: gray;
-}
-.second-nav-col2{
+
+.second-nav-col2 {
     display: flex;
     justify-content: center;
     gap: 50px;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 400;
     width: 50%;
-    font-family:"Playfair Display",serif ;
-}
-body {
     font-family: "Playfair Display", serif;
 }
+
+.second-nav-col2 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    color: gray;
+}
+
 .about-page-pic {
     height: 70vh;
     background-image: url('../image/about.jpg');
@@ -88,6 +100,7 @@ body {
     padding-top: 25vh;
     animation: fadeIn 2s ease-in-out;
 }
+
 .about-page-pic p {
     font-size: medium;
     font-weight: bold;
@@ -103,6 +116,7 @@ body {
     opacity: 0;
     animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
+
 .blog {
     margin-top: -10vh;
     position: relative;
@@ -110,7 +124,7 @@ body {
     width: 100vw;
     background-color: #f3f4f8;
     z-index: 2;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 .blog-hd1 {
@@ -129,11 +143,11 @@ body {
 }
 
 .blog-block {
-    height: 200vh; 
+    height: 200vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 33vw 33vw 33vw;
-    animation: fadeIn 2s ease-in-out
+    grid-template-columns: repeat(3, 1fr);
+    animation: fadeIn 2s ease-in-out;
 }
 
 .blog-area {
@@ -146,13 +160,14 @@ body {
     box-sizing: border-box;
     transition: transform 0.6s ease;
 }
-.blog-area:hover{
+
+.blog-area:hover {
     transform: scale(1.02);
 }
 
-.blg-pic img{
+.blg-pic img {
     width: 100%;
-    height:40vh;
+    height: 40vh;
     border-radius: 6px;
 }
 
@@ -214,6 +229,7 @@ body {
     padding-top: 10px;
     color: #959597;
 }
+
 .end {
     position: relative;
     height: 70vh;
@@ -226,9 +242,8 @@ body {
 
 .end1, .end4 {
     width: 25vw;
-    max-width: 25vw; 
     padding-top: 100px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .end1 b, .end4 b {
@@ -273,8 +288,6 @@ body {
     margin-bottom: 7px;
     border-radius: 4px;
     transition: all 0.6s;
-    animation: ease-in-out;
-    font-size: small;
 }
 
 .cloud:hover {
@@ -289,6 +302,7 @@ body {
     font-size: large;
     font-family: "Playfair Display", serif;
 }
+
 .subscribe-sub {
     margin-top: 20px;
 }
@@ -305,17 +319,17 @@ body {
 
 .subscribe-sub button {
     width: 100%;
-    max-width: 40px; 
+    max-width: 40px;
     height: 40px;
     border: 1px solid #fc456a;
     background-color: #fc456a;
     color: white;
     font-family: "Playfair Display", serif;
     cursor: pointer;
-    animation: ease-in-out;
     transition: all 0.6s;
 }
-.subscribe-sub button:hover{
+
+.subscribe-sub button:hover {
     transform: scale(1.1);
 }
 
@@ -338,12 +352,11 @@ body {
     border: 1px solid rgb(107, 102, 102);
     cursor: pointer;
     font-family: "Playfair Display", serif;
-    transition:all 0.6s ;
-    animation: ease-in-out;
+    transition: all 0.6s;
 }
 
 .social button:hover {
-    color:#FC456A;
+    color: #FC456A;
     transform: scale(1.15);
     border: 1px solid #FC456A;
 }
@@ -351,6 +364,7 @@ body {
 .social i {
     font-size: medium;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -368,5 +382,78 @@ body {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .second-nav-col1 {
+        width: 40%;
+    }
+
+    .second-nav-col2 {
+        width: 60%;
+        font-size: large;
+    }
+
+    .blog-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-area {
+        max-width: 45vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .top-nav,
+    .second-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav-col1,
+    .top-nav-col2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .second-nav-col1,
+    .second-nav-col2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .blog-block {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-area {
+        max-width: 90vw;
+    }
+
+    .end1, .end4 {
+        width: 90vw;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-page-pic h1 {
+        font-size: 2em;
+    }
+
+    .about-page-pic p {
+        font-size: small;
+    }
+
+    .blog-hd1 {
+        font-size: 2em;
+    }
+
+    .blog-hd-2 {
+        font-size: large;
     }
 }
