@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"Playfair Display",serif ;
 }
 .top-nav{
     font-family:"Playfair Display",serif ;
@@ -103,6 +104,262 @@ body {
     opacity: 0;
     animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
+.back{
+    padding-top: 10vh;
+    position: relative;
+    height: 210vh;
+    width: 100vw;
+    background-color: #c9c9d1;
+}
 .contact{
-    
+    height: 180vh;
+    width: 90vw;
+    margin: 15vh 5vw 5vh 5vw;
+    background-color:white;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:center;
+}
+.map iframe{
+    height: 100%;
+    width: 55vw;
+}
+.ct{
+    height: 91vh;
+    width: 55vw;
+    background-color: white;
+}
+.text h4{
+    text-align:center;
+    font-size: xx-large;
+    padding: 4vh ;
+}
+.text p{
+  padding: 4vh 5vw 8vh 5vw;
+}
+.text a{
+    padding-left : 5vw ;
+}
+.text button{
+    height: 6vh;
+    width: 15vw;
+    background-color: #fc456a;
+    color: white;
+    border: 1px solid #fc456a;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.text button:hover{
+background-color: transparent;
+color: #FC456A;
+cursor: pointer;
+}
+.form{
+ background-color:white;
+}
+.form p{
+ font-size: xx-large;
+ font-weight: bold;
+ padding: 7vh 1vw 8vh 2vw ;
+}
+.form input{
+    height: 7vh;
+    width: 24.5vw;
+    border:1px solid grey;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.form button{
+margin-left: 15px;
+margin-top:30px ;
+height: 6vh;
+width: 10vw;
+background-color: #fc456a;
+color: white;
+border: 1px solid #fc456a;
+ border-radius: 5px;
+ transition: all 0.6s;
+}
+.form button:hover{
+    background-color: transparent;
+    color: #FC456A;
+    cursor: pointer;
+}
+.address{
+background-color: #fc456a;
+color: white;
+}
+.address h5{
+ font-size: xx-large;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 7vh;
+ padding-bottom: 4vh;
+}
+.address p ,li{
+ padding: 2vh 5vw 4vh 5vw;
+}
+.address span{
+font-size: larger;
+font-weight: bold;
+}
+.address a{
+text-decoration: none;
+color: rgb(209, 206, 206);
+}
+.end {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    animation: slideIn 1s ease-out 1.5s;
+}
+
+.end1, .end4 {
+    width: 25vw;
+    max-width: 25vw; 
+    padding-top: 100px;
+    box-sizing: border-box; 
+}
+
+.end1 b, .end4 b {
+    font-size: 1.5em;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.end1 p, .end4 p {
+    padding: 30px 10px;
+    color: #5c5c5f;
+    font-family: "Playfair Display", serif;
+}
+
+.end1 ul {
+    list-style: none;
+    padding: 20px 10px;
+    font-family: "Playfair Display", serif;
+    color: rgb(228, 221, 221);
+}
+
+.end1 li {
+    padding-top: 20px;
+}
+
+.end1-services-li a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.end1-label {
+    padding-top: 20px;
+}
+
+.cloud {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    transition: all 0.6s;
+    animation: ease-in-out;
+    font-size: small;
+}
+
+.cloud:hover {
+    border: 1px solid black;
+    transform: scale(1.03);
+}
+
+.end-but {
+    text-decoration: none;
+    color: #fc456a;
+    padding-left: 20px;
+    font-size: large;
+    font-family: "Playfair Display", serif;
+}
+.subscribe-sub {
+    margin-top: 20px;
+}
+
+.subscribe-sub input {
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    background-color: rgb(46, 44, 44);
+    border: none;
+    padding-left: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.subscribe-sub button {
+    width: 100%;
+    max-width: 40px; 
+    height: 40px;
+    border: 1px solid #fc456a;
+    background-color: #fc456a;
+    color: white;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    animation: ease-in-out;
+    transition: all 0.6s;
+}
+.subscribe-sub button:hover{
+    transform: scale(1.1);
+}
+
+.follow {
+    padding-top: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+.social {
+    padding-top: 20px;
+}
+
+.social button {
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 40px;
+    color: white;
+    background-color: #272727;
+    border: 1px solid rgb(107, 102, 102);
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+    transition:all 0.6s ;
+    animation: ease-in-out;
+}
+
+.social button:hover {
+    color:#FC456A;
+    transform: scale(1.15);
+    border: 1px solid #FC456A;
+}
+
+.social i {
+    font-size: medium;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

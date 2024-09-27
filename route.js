@@ -111,4 +111,9 @@ router.use("/blog",(req,res)=>
                             res.render("blog")
                             res.end()
                         })
+router.use("/contact",(req,res)=>
+                         {
+                                res.render("contact")
+                                res.end()
+                            })
     module.exports = router;
