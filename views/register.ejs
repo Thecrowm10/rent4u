@@ -18,6 +18,10 @@
               <input type="email" required placeholder="Email" name="email">
               <input type="password" required placeholder="Password" name="password">
               <input type="password" required placeholder="Confirm Password" name="confirm_password">
+              <div class="preview">
+                <img src="" alt="" id="img-form-1">
+              </div>
+            <input class="img" type="file" accept="image/*"  onchange="showPreview(event);" id="img-form" required placeholder="image" name="image">
              <a href="/" class="reg-page-but"><button >Register</button></a>
           </form>
           <p class="register">Already have an account? <a href="/">Login</a></p>
@@ -26,5 +30,17 @@
           <% } %>
       </div>
   </div>
+  <script type="text/javascript">
+    function showPreview(event){
+        if(event.target.files.length>0){
+            var src = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("img-form-1");
+            preview.src = src;
+            preview.style.display="block";
+
+        } 
+    }
+
+  </script>
 </body>
 </html>

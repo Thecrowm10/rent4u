@@ -4,7 +4,7 @@ const mysql_connect=require("./mysql_connector")
 const connection = require('./mysql_connector')
 router.get("/",(req,res)=>
     {
-        res.render("login")
+        res.render("index")
         res.end()
     }
     )
@@ -69,7 +69,9 @@ router.get("/",(req,res)=>
                             var email=req.body.email
                         var password=req.body.password
                         var confirm_password=req.body.confirm_password
-            const q=`insert into register (name,email,password,confirm_password)values('${name}','${email}','${password}','${confirm_password}')`
+                        var image=req.body.image
+            const q=`insert into register (name,email,password,confirm_password,image)values('${name}','${email}','${password}','${confirm_password}','${image}')`
+            
             connection.query(q,(err)=>
             {
                 if(err){
@@ -86,6 +88,7 @@ router.get("/",(req,res)=>
                 }  
             }
             )
+            
  router.use("/index",(req,res)=>
                 {
                     res.render("index")
