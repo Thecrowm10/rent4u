@@ -141,8 +141,10 @@ body {
     border: 1px solid #fc456a;
     border-radius: 5px;
     transition: all 0.6s;
+    animation: ease;
 }
 .text button:hover {
+    transform: scale(1.02);
     background-color: transparent;
     color: #FC456A;
     cursor: pointer;
@@ -172,8 +174,10 @@ body {
     border: 1px solid #fc456a;
     border-radius: 5px;
     transition: all 0.6s;
+    animation: ease;
 }
 .form button:hover {
+    transform: scale(1.02);
     background-color: transparent;
     color: #FC456A;
     cursor: pointer;

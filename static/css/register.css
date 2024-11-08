@@ -89,7 +89,7 @@ body {
 }
 
 .reg-page-but button {
-    margin-top: 25px;
+    margin-top: 5px;
     height: 6vh;
     width: 100%;
     border-radius: 8px;
@@ -122,8 +122,9 @@ body {
     text-decoration: underline;
 }
 .preview img{
-    width: 50%;
-    height: 25%;
+    width: 15%;
+    border-radius: 50%;
+    height:auto;
     display: none;
 }
 /* Animations */

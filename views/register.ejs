@@ -12,15 +12,14 @@
       <div class="register-image"></div>
       <div class="register-form-container">
           <h1>Register</h1>
+          <div class="preview">
+            <img src="" alt="" id="img-form-1">
+          </div>
           <p>Create an account to manage your properties and rentals.</p>
           <form class="register-form" action="/register" method="post">
               <input type="text" required placeholder="Full Name" name="name">
               <input type="email" required placeholder="Email" name="email">
               <input type="password" required placeholder="Password" name="password">
-              <input type="password" required placeholder="Confirm Password" name="confirm_password">
-              <div class="preview">
-                <img src="" alt="" id="img-form-1">
-              </div>
             <input class="img" type="file" accept="image/*"  onchange="showPreview(event);" id="img-form" required placeholder="image" name="image">
              <a href="/" class="reg-page-but"><button >Register</button></a>
           </form>

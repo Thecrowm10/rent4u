@@ -68,9 +68,8 @@ router.get("/",(req,res)=>
                             var name=req.body.name
                             var email=req.body.email
                         var password=req.body.password
-                        var confirm_password=req.body.confirm_password
                         var image=req.body.image
-            const q=`insert into register (name,email,password,confirm_password,image)values('${name}','${email}','${password}','${confirm_password}','${image}')`
+            const q=`insert into register (name,email,password,confirm_password,image)values('${name}','${email}','${password}','${image}')`
             
             connection.query(q,(err)=>
             {
