@@ -70,7 +70,7 @@
         <a href="/apartment"><button>BOOK APARTMENT NOW</button></a>
     </div>
     <div class="form ct">
-        <form action="">
+        <form id="contact-form">
             <p>Get in touch</p>
      <input type="text" placeholder="    Name" id="name"
      name="name">
@@ -80,14 +80,14 @@
      name="subject" style="width: 50vw;"><br>
      <textarea type="text" placeholder="    Message" id="message"
      name="message" style="width: 50vw; margin-top: 10px; margin-left: 15px; font-size: large; border: 1px solid grey;" rows="5" cols="15"></textarea><br>
-     <a href=""><button>SEND MESSAGE</button></a>
+     <a href=""><button type="submit">SEND MESSAGE</button></a>
     </form>
     </div>
     <div class="address ct1">
         <h5>Let's get in touch</h5>
         <p>We're open for any suggestion or just to have a chat</p>
         <ul style="list-style-type: none;">
-            <li><span><i class="bi bi-geo-alt-fill"></i>     ADDRESS:</span><a href="">   144 East Mall Shimla 171207</a></li>
+            <li ><span><i class="bi bi-geo-alt-fill"></i>     ADDRESS:</span><a href="">   144 East Mall Shimla 171207</a></li>
             <li><span><i class="bi bi-telephone-fill"></i>      PHONE:</span><a href="tel:8219722473">   8219722473</a></li>
             <li><span><i class="bi bi-envelope-fill"></i>      EMAIL:</span><a href="mailto:ts6308969@gmail.com">   ts6308969@gmail.com</a></li>
             <li><span><i class="bi bi-globe-central-south-asia"></i>      WEBSITE:</span><a href="/blog">   VacationalRental.com</a></li>
@@ -140,3 +140,24 @@
     </div>
    
 </div>
+</body>
+<script>
+    (function() {
+        emailjs.init("service_wktffir");
+    })();
+
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_wktffir', 'template_30xtcvq', this)
+            .then(function(response) {
+                alert('Thank you! Your message has been sent successfully. We’ll get back to you shortly!');
+                form.reset();
+            }, function(error) {
+                alert('Failed to send your message. Please try again.');
+                console.error('EmailJS Error:', error);
+            });
+    });
+</script>
+</html>

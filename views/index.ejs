@@ -6,6 +6,8 @@
     <title>colorlib</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 <body>
     <div class="page">
@@ -33,6 +35,7 @@
             </a>
         </div>
     </div></div>
+
     <br>
     <div class="second-nav">
 
@@ -49,9 +52,21 @@
     <a href="/about"><button>About</button>
     </a>
     <a href="/services"><button>Services</button></a>
-    <a href="/apartment"><button>Aparment Room</button></a>
+    <a href="/apartment"><button>Rooms</button></a>
     <a href="/blog"><button>Blog</button></a>
-    <a href="/contact"><button>Contact</button></a>
+    <a href="/contact"><button>Contact</button></a> 
+    <div class="search-container">
+        
+        <select name="search-bar" id="" placeholder="search" style="border: rgb(82, 81, 81); font-size: 1.1rem ; color: grey; ">
+        <option value="">search</option>
+        <option value="">Himachal Pardesh</option>
+        <option value="">Haryana</option>
+        <option value="">Punjab</option>
+        <option value="">Chandigarh</option>
+    </select>
+    <a href="/apartment"><button style="color: grey; border: 1px solid grey; border-radius: 2px; width: 80px;">search</button></a>
+
+      </div>
     <div class="dropdown">
         <button class="dropbtn"><span><img src="../static/image/tushar.jpg">Account<i class="bi bi-caret-down-fill"></i></span></button>
         <div class="dropdown-content">
@@ -74,7 +89,7 @@
         <a href="/contact" class="bt2"><button>Contact us</button></a></div></div>
         
         <div class="header-form">
-            <form action="">
+            <form id="booking-form">
                 <p>Book your apartment</p>
                 <input type="text" placeholder="  Full Name" style="width: 95%; height: 20%" id="fullname" name="name">
                 <span id="nameError"></span>
@@ -93,17 +108,17 @@
                 </select>
                  <select name="children" id="children" style="width: 45%; height: 20%">
                     <option value="">Children</option>
+                    <option value="">0</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
                     <option value="">4</option>
-                    <option value="">5</option>
                 </select>
                 <br>
                 <input type="tel" name="Phone-no" id="phone-no" placeholder="Phone No." style="width: 45%; height: 20%">
                 <input type="time" name="" id="" placeholder="Time" style="width: 45%; height: 20%">
                 
-                    <a href=""> <button>Book Apartment Now</button></a>
+                    <a href="/apartment"> <button type="submit"> Book Apartment Now</button></a>
             </form>
         </div>
     
@@ -498,4 +513,26 @@
    
 </div>
 </body>
+<script>
+    (function() {
+        emailjs.init("soxLs0_dnFeBbsOxw");
+    })();
+
+    const form = document.getElementById('booking-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_wktffir', 'template_qzlgi3a', this)
+            .then((response) => {
+                alert('Your booking has been submitted successfully!');
+                form.reset();
+            })
+            .catch((error) => {
+                alert('Failed to submit your booking. Please try again.');
+            });
+    });
+    function toggleSearchBar() {
+      const searchBar = document.querySelector('.search-bar');
+      searchBar.classList.toggle('active');
+    }
+</script>
 </html>

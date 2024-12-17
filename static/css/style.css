@@ -81,10 +81,10 @@ body {
 .second-nav-col2 {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 35px;
     font-size: xx-large;
     font-weight: 400;
-    width: 60%;
+    width: 80%;
     font-family: "Playfair Display", serif;
 }
 .dropdown {
