@@ -26,7 +26,6 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
 }
-
 .register-image {
     width: 50%;
     background: url('../image/about.jpg') center/cover no-repeat; 
@@ -36,7 +35,6 @@ body {
     box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
     animation: slideInLeft 1s ease-in-out;
 }
-
 .register-form-container {
     width: 50%;
     display: flex;
